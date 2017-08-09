@@ -92,8 +92,8 @@ include "../controller/login.php";
                                 </a>
                                 <!-- Sub menu -->
                                 <ul>
-                                    <li><a href="home.php?pg=pacientes">Medicos</a></li>
-                                    <li><a href="home.php?pg=administrativo.php">Odontologicos</a></li>
+                                    <li><a href="home.php?pg=listpacmedic">Medicos</a></li>
+                                    <li><a href="home.php?pg=listpacodon">Odontologicos</a></li>
                                 </ul>
                             </li>
                         </ul>

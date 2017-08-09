@@ -4,11 +4,14 @@ body.tela-login {
 .container.admin-central{
     background: #021c9a !important;
     width: 100% !important;
-    margin-top: 0px !important;;
+    margin-top: 0px !important;
 }
 .container.centro-home{
     width: 66%;
     margin-top: 74px;
     border-radius: 10px;
     padding: 10px 27px 10px;
+}
+.form-control.buscar-botao {
+        width: 63% !important;
 }

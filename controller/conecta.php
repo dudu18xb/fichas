@@ -4,7 +4,7 @@
 		//dados do servidor
 		$servidor = "localhost";
 		$usuario = "root";
-		$senha = "";
+		$senha = "casaverde067dudu";
 		$banco = "ficha";
 		$con = new PDO ( "mysql:host=$servidor;
 			dbname=$banco;
