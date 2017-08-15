@@ -1,4 +1,4 @@
-<h1>Lista de Todos os Pacientes Médicas</h1>
+<h1>Lista de Todos os Pacientes Odontológicos</h1>
 
 <div class="pull-right">
 	<a href="home.php?pg=cadopacientes"
@@ -14,10 +14,10 @@
 </div>
 
 <div class="clearfix"></div>
-<form name="form1" method="get" class="form-inline">
+<form name="form1" method="get" class="form-inline" style="margin-top: -133px;">
     <label for="busca">Realizar Busca por Nome:</label>
     <input type="hidden" name="pg" value="listpacodon">
-    <input type="text" name="busca" class="form-control buscar-botao">
+    <input type="text" name="busca" class="form-control buscar-botao" style="text-transform:uppercase">
     <input type="submit" class="btn btn-success" value="Pesquisar">
 </form>
 <br>
@@ -53,10 +53,10 @@ while ($dados = $consulta->fetch(PDO::FETCH_OBJ)) {
 
     //mostrar os dados na linha da tabela
     echo "<tr>
-				<td>$id</td>
-				<td>$nome</td>
-				<td>$numero</td>
-				<td>$data</td>
+				<td style='font-size:1.3em;text-transform:uppercase;text-align: center;'>$id</td>
+				<td style='font-size:1.3em;text-transform:uppercase;text-align: center;'>$nome</td>
+				<td style='font-size:1.3em;text-transform:uppercase;text-align: center;'>$numero</td>
+				<td style='font-size:1.3em;text-transform:uppercase;text-align: center;'>$data</td>
 				<td>
                                 <!-- 
 					<a 

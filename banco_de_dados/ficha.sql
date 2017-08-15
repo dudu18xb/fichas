@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.6deb4
--- https://www.phpmyadmin.net/
+-- version 4.1.14
+-- http://www.phpmyadmin.net
 --
--- Host: localhost:3306
--- Tempo de geração: 09/08/2017 às 08:16
--- Versão do servidor: 5.7.19-0ubuntu0.17.04.1
--- Versão do PHP: 7.0.22-2+ubuntu17.04.1+deb.sury.org+1
+-- Host: 127.0.0.1
+-- Generation Time: 15-Ago-2017 às 18:37
+-- Versão do servidor: 5.6.17
+-- PHP Version: 5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,27 +14,28 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
--- Banco de dados: `ficha`
+-- Database: `ficha`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `admin`
+-- Estrutura da tabela `admin`
 --
 
-CREATE TABLE `admin` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `login` varchar(100) NOT NULL,
   `nome` varchar(100) NOT NULL,
-  `senha` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `senha` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
--- Fazendo dump de dados para tabela `admin`
+-- Extraindo dados da tabela `admin`
 --
 
 INSERT INTO `admin` (`id`, `login`, `nome`, `senha`) VALUES
@@ -43,90 +44,410 @@ INSERT INTO `admin` (`id`, `login`, `nome`, `senha`) VALUES
 (3, 'marilene', 'Marilene Mamede dos Santos', 'e10adc3949ba59abbe56e057f20f883e'),
 (4, 'daniel', 'Daniel Argenton Manfredini', 'e10adc3949ba59abbe56e057f20f883e'),
 (5, 'paty', 'Patricia dos Passos Campanholi', 'e10adc3949ba59abbe56e057f20f883e'),
-(6, 'julia', 'Julia Maria Conceição Leite', 'e10adc3949ba59abbe56e057f20f883e');
+(6, 'julia', 'Julia Maria Conceição Leite', 'e10adc3949ba59abbe56e057f20f883e'),
+(7, 'meyre', 'Meyre Paulino Gudelunas', 'e10adc3949ba59abbe56e057f20f883e');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `ficha_medica`
+-- Estrutura da tabela `ficha_medica`
 --
 
-CREATE TABLE `ficha_medica` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `ficha_medica` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   `numero` varchar(100) NOT NULL,
-  `data` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `data` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=301 ;
 
 --
--- Fazendo dump de dados para tabela `ficha_medica`
+-- Extraindo dados da tabela `ficha_medica`
 --
 
 INSERT INTO `ficha_medica` (`id`, `nome`, `numero`, `data`) VALUES
-(2, 'eduardo', '1221', '1998-02-06'),
-(3, 'Bruna mendonça (teste)', '0101010101011001', '2000-12-12');
+(4, 'ALCIDES MONTEIRO', '2665', '0000-00-00'),
+(5, 'ARGENTINA CORREIA', '7080', '0000-00-00'),
+(6, 'ADRIANA CRISTIMA ALVES', '1019', '0000-00-00'),
+(7, 'ANTONIA SILVA CEARA', 'CAIXA VILA RURAL', '0000-00-00'),
+(8, 'AURENIZIA FONSECA OLIVEIRA', '3002', '0000-00-00'),
+(9, 'ANA CLAUDIA LAGUILO RIBAS', '4963', '0000-00-00'),
+(10, 'ALINE RENATA ELIAS', '0224', '0000-00-00'),
+(11, 'AMELIA MARIA DAS VIRGENS', '432', '0000-00-00'),
+(12, 'ANTONIO SANCHES', '7060', '0000-00-00'),
+(13, 'ANTONIO GOULART FIGUEIREDO', '12575', '0000-00-00'),
+(14, 'ANTONIO BASSALOBRE', '54', '0000-00-00'),
+(15, 'ANA MARIA SILVA DAMASCENO', '0332', '0000-00-00'),
+(16, 'ANGELINA FERREIRA RODRIGUES', '1996', '0000-00-00'),
+(17, 'APOLINARIO JOSE GOMES', '9146', '0000-00-00'),
+(18, 'ALCIDES MONTEIRO LIMA', '1665', '0000-00-00'),
+(19, 'ALZIRA MANTOVANI DEBIA', '9276', '0000-00-00'),
+(20, 'ARCI ALVES ADORNO', '2690', '0000-00-00'),
+(21, 'ALCIDES MONTEIRO LIMA', '2665', '0000-00-00'),
+(22, 'ALVINA PEREIRA DOS SANTOS', '1868', '0000-00-00'),
+(23, 'CARMINHA SCHIAVÃO HEINS', '679', '0000-00-00'),
+(24, 'CAMILO BATISTA DA S. FILHO', '6194', '0000-00-00'),
+(25, 'CARMELITA DOMINGUES LUCIANO', '73', '0000-00-00'),
+(26, 'DAMIÃO VICENTE SILVA', '1270', '0000-00-00'),
+(27, 'DULCINEIA GUEDES DE FREITAS', '3228', '0000-00-00'),
+(28, 'ELIANE MARQUEZINI', '4345', '0000-00-00'),
+(29, 'EDERSON LUIZ DE OLIVEIRA SANTOS', '9790', '0000-00-00'),
+(30, 'EUIDES MARTINS PEREIRA', '5084', '0000-00-00'),
+(31, 'ELIDIA FLORENCIO VEIRA', '2071', '0000-00-00'),
+(32, 'ELIANE CAMPANARO', '1690', '0000-00-00'),
+(33, 'EMILIA BUZINARO PIRES', '1940', '0000-00-00'),
+(34, 'ELIDIA FLORENÇO', '2071', '0000-00-00'),
+(35, 'FLAVIO MARQUES', '9916', '0000-00-00'),
+(36, 'FATIMA NASCIMENTO', '3314', '0000-00-00'),
+(37, 'GERALDO RATI', '5479', '0000-00-00'),
+(38, 'GABRIEL JOSE DOS PASSOS', '3173', '0000-00-00'),
+(39, 'GERALDINA ARAUJO BRAGA', '2088', '0000-00-00'),
+(40, 'GENI MARIA DA SILVA', '1717', '0000-00-00'),
+(41, 'IZALTINA GORDIANA', '10102', '0000-00-00'),
+(42, 'JERONIMO CARLOS', '10250', '0000-00-00'),
+(43, 'JOAO DIAS DA SILVA', '10327', '0000-00-00'),
+(44, 'JOSE GONZALES JUNIOR', '10458', '0000-00-00'),
+(45, 'JOSE GERALDO DE ASSIS', '4407', '0000-00-00'),
+(46, 'JOSUE LISBOA', '10383', '0000-00-00'),
+(47, 'JULIETA MUNIZ FEITOSA', '3203', '0000-00-00'),
+(48, 'JURANDIR MUCELIM', '4887', '0000-00-00'),
+(49, 'jUVENAL VICENTE', '10213', '0000-00-00'),
+(50, 'LAIDE AP DA SILVA', '4258', '0000-00-00'),
+(51, 'LAURINDA MORAIS ROSA', '12227', '0000-00-00'),
+(52, 'LUIZA DIAS GABRIEL', '0945', '0000-00-00'),
+(53, 'LAZARA THEODORO CUBA', 'FICHA SOLTA', '0000-00-00'),
+(54, 'LAURA DOS SANTOS RODRIGUES', '783', '0000-00-00'),
+(55, 'MARIA SOARES DE OLIVEIRA', '0600', '0000-00-00'),
+(56, 'MARIA DAS DORES FONSECA', '1580', '0000-00-00'),
+(57, 'MARIA PAULA DA SILVA', '065 OU 79', '0000-00-00'),
+(58, 'MARIA AQUIDA DA SILVA', '4545', '0000-00-00'),
+(59, 'MARIA CLENIR ROTTA GAULARTE', '12423', '0000-00-00'),
+(60, 'MARIA DE JESUS MARQUES DIAS', '1638', '0000-00-00'),
+(61, 'MARTA FERNANDES DA SILVA MEDEIROS', '5063', '0000-00-00'),
+(62, 'MARIA MAXIMINA', '3332', '0000-00-00'),
+(63, 'MARIA PEREIRA DOS SANTOS', '4376 - 10/04/22 (MAE NORINHO)', '0000-00-00'),
+(64, 'MARIA DO CARMO GOLVEIA AMATUZE', '4852', '0000-00-00'),
+(65, 'MANOEL DA SILVA LEITE', '3248', '0000-00-00'),
+(66, 'MARIA DE FREITAS GONZALES', '11103', '0000-00-00'),
+(67, 'MARIA MALDONADO ELIAS', '3036', '0000-00-00'),
+(68, 'NATIR LIMA PASSOS', '405', '0000-00-00'),
+(69, 'NILVALDO PEDROZO', 'SEM INFORMAÇÕES', '0000-00-00'),
+(70, 'OTAIRA GOMES', '5381', '0000-00-00'),
+(71, 'PEDRO JOSE DOS SANTOS', '57 (PEDRO FRANGUEIRO)', '0000-00-00'),
+(72, 'PEDRO GONÇALVEZ DE SOUZA', '4750', '0000-00-00'),
+(73, 'ROSA INACIO AFONSO', '11340', '0000-00-00'),
+(74, 'RAFAEL MOTA', '2390', '0000-00-00'),
+(75, 'SIRLEI BUDACHI', '4744', '0000-00-00'),
+(76, 'SEVERINO HENRIQUE SOUZA', '3151', '0000-00-00'),
+(77, 'TEREZA MARIA DE OLIVEIRA', '0261', '0000-00-00'),
+(78, 'TEREZINHA BORGES BONIFACIO', '1512', '0000-00-00'),
+(79, 'VERA LUCIA DA SILVA', '11852', '0000-00-00'),
+(80, 'VANUSA FRANCISCO PEIXOTO', '2729', '0000-00-00'),
+(81, 'ZILDA LISBOA', '199', '0000-00-00'),
+(82, 'ZILDA ROSA FERNANDES', '0102', '0000-00-00'),
+(83, 'ZENILDA MARIA SANTOS', '1899', '0000-00-00'),
+(84, 'ZELINDA GONÇALVES CARVALHO', '611', '0000-00-00'),
+(85, 'ZULMERINDA BENIZ DE CARVALHO SILVA', '4883', '0000-00-00'),
+(86, 'meyre', '1545485', '0000-00-00'),
+(87, 'marilene mamede', 'teste', '0000-00-00'),
+(88, 'CORINA MONTEIRO DOS SANTOS', '821', '1951-07-22'),
+(89, 'LUSINETE MARIA DA SILVA', 'FICHA SOLTA', '1958-05-06'),
+(90, 'IRENE PARRA DA SILVA', '2504', '1963-05-25'),
+(91, 'APARECIDA DE OLIVEIRA VIEIRA', '1833', '1963-05-25'),
+(92, 'MARLENE BUZUTTI MACHADO DELAI', '596', '1963-09-01'),
+(93, 'EUDES RODRIGUES DA PAS MELO', '2307', '1966-12-05'),
+(94, 'ROSIMARA VOLSO GONÇALVES', 'FICHA SOLTA', '1969-05-08'),
+(95, 'FESTINA APARECIDA ZINERMAN BORGES', '1089', '1975-09-14'),
+(96, 'PATRICIA APARECIDA DA SILVA HERNANDES', '3279', '1983-02-22'),
+(97, 'IZABEL BONIFACIO DA ROCHA', '757', '1984-07-14'),
+(98, 'GISLAINE BRAGA PRESIDIO', '3118', '1990-09-20'),
+(99, 'AURORA GADIOLI ROSSETTO', 'ELISA', '1930-02-28'),
+(100, 'RAMON HERNANDES', '5243', '1932-11-18'),
+(101, 'MARIA ANTONIA PEREIRA', '39', '1933-12-11'),
+(102, 'CARMEN DE SA ALVES', '1332', '1944-07-05'),
+(103, 'MARIA FRANCISCA FILHA RIBEIRO', '3846', '1948-08-01'),
+(104, 'MARIA SENHORA NASCIMENTO LOMBARDI', '824', '1961-06-16'),
+(105, 'MARIA DE JESUS MATEUS GOLOMBIESK', '2129', '1962-08-03'),
+(106, 'ANTONIA MARIA DE JESUS', '1430', '1963-09-07'),
+(107, 'SUELI JUDITE RANPAZIO MACHADO', 'CASA BRANCA', '1965-01-17'),
+(108, 'ROSMERIA GOMES DE MORAES', '9114', '1968-03-09'),
+(109, 'DEVANILDA IZABEL LAGUILLO COGO', '5246', '1971-10-28'),
+(110, 'JULIANA CRISTINA DE OLIVEIRA', '3942', '1988-04-23'),
+(111, 'FRANCIELI DE OLIVEIRA COSTA', '2357', '1990-05-04'),
+(112, 'AMANDA FEDRIGO FASSINA', '4641', '1990-07-31'),
+(113, 'MARCIA CRISTINA DA SILVA', '1355', '1993-01-17'),
+(114, 'GIRLEI BATISTA ANTUNES', '3192', '1996-06-10'),
+(115, 'VANIA CRISTINA DOS ANJOS SANTOS', '8037', '1998-04-15'),
+(116, 'DALGIZA MARIA DA SILVA', 'FICHA DA CAIXA DE CASA BRANCA OU 4820', '1928-09-24'),
+(117, 'EMILIA BUSINARO PIRES', '1940', '1935-06-18'),
+(118, 'GENI VIOL TEIXEIRA MOIZES', '145', '1944-07-09'),
+(119, 'MARIA VERONICA SOMERA DOS SANTOS', '808', '1946-06-15'),
+(120, 'VERA LUCIA DA SILVA', 'CAIXA FICHA SOLTA', '1953-05-10'),
+(121, 'JOSE ALVES DE SOUZA', '6113', '1955-11-23'),
+(122, 'ANA MARIA BORBA DE OLIVEIRA', 'FICHA SOLTA', '1958-07-05'),
+(123, 'MARIA SERVIDONE', '1251', '1959-04-10'),
+(124, 'EVA RODRIGUES DOS SANTOS SANTANA', '1569', '1958-09-10'),
+(125, 'LUCIA HRYCZINA PONTES', 'CASA BRANCA', '1960-11-10'),
+(126, 'MARIA FAVARO ITABORAY', 'FICHA SOLTA', '1962-04-16'),
+(127, 'elza de oliveira branco', '422', '1968-10-26'),
+(128, 'alzira tolin reis', 'ficha de eliza', '1976-07-12'),
+(129, 'alessandra aparecida macedo maciel', '4093', '1982-01-28'),
+(130, 'vanderlei crispim da silva', 'ficha solta', '1984-02-19'),
+(131, 'thamirez cristina silva maldonado', '1704', '1989-01-20'),
+(132, 'elizane francisco dos santos', 'ficha solta', '1989-09-27'),
+(133, 'dalvina rodrigues da mata pas', '5069', '1943-12-04'),
+(134, 'senhorinha soares neves', '218', '1947-10-10'),
+(135, 'miguel gomes', '1178', '1951-05-02'),
+(136, 'madalena marte nardin', 'casa branca', '1951-12-05'),
+(137, 'neuza bernardino do nascimento', '4815', '1953-01-06'),
+(138, 'paulo ceranto', 'ficha solta', '1954-01-25'),
+(139, 'dalva gonçalves dias', 'ficha de elisa', '1953-11-29'),
+(140, 'lourdes prates de assis', '721', '1954-06-27'),
+(141, 'maria cecilia argenton silva', 'casa branca', '1955-11-19'),
+(142, 'helena maria pereira rosa', '2083', '1959-05-31'),
+(143, 'lourdes alves valenzuella', 'ficha solta', '1960-10-12'),
+(144, 'nadir aparecida da silva domingues', '3649', '1964-07-13'),
+(145, 'clarice abel da silva', '680', '1966-02-07'),
+(146, 'maria pereira de jesus', 'nao foi localizado a ficha', '1969-09-19'),
+(147, 'sheila ligia dos santos', '3065', '1975-12-28'),
+(148, 'franciele aparecida de novais', '4775', '1988-12-06'),
+(149, 'juliana cristina de oliveira', '3942', '1988-04-23'),
+(150, 'larissa maiara pereira barbosa', '10578', '1993-05-30'),
+(151, 'zumira santos souza', '2002', '1940-05-29'),
+(152, 'severino francisco da silva', '3053', '1944-06-09'),
+(153, 'felisbina luiz de santana lucio', '1389', '1949-03-26'),
+(154, 'rosalina das graças eggert', '1049', '1950-06-26'),
+(155, 'piedade jacinta zinermam', '505', '1950-08-16'),
+(156, 'margarida donata da silva', '6170', '1951-12-01'),
+(157, 'maria socorro nascimento dos reis', 'ficha de eliza', '1958-06-07'),
+(158, 'nair medeiros dos santos', '1330', '1960-06-23'),
+(159, 'aparecida cordeiro de oliveira leite', '1998', '1962-08-02'),
+(160, 'maria aparecida dos reis', '9064', '1964-01-19'),
+(161, 'valdecir de souza', '3381', '1965-11-17'),
+(162, 'telma rosar', '3262', '1975-08-23'),
+(163, 'maria jose de oliveira antunes', '2315', '1979-07-10'),
+(164, 'lucileia fernandes camisque', '472', '1981-03-20'),
+(165, 'valdeir tortora gonçalves', 'ficha solta', '1982-09-24'),
+(166, 'nilcelia de oliveira da costa', '1762', '1984-01-07'),
+(167, 'joana vieira barros', '6126', '0000-00-00'),
+(168, 'ANTONIA APARECIDA FABRE VIEIRA', '508', '1946-12-07'),
+(169, 'jose paulino da silva', '2291', '1949-08-06'),
+(170, 'APOLONIA APARECIDA GROTO', '1413', '1950-08-11'),
+(171, 'MARIA DE LOURDES BERTUCE', 'CASA BRANCA', '1950-06-14'),
+(172, 'MARIA OURIVES BUENO', 'FICHA DE CASA BRANCA', '1951-07-19'),
+(173, 'LELIO BATISTA DA SILVA', '475', '1952-02-22'),
+(174, 'TEREZINHA DE fRANÇA', '1946', '1954-10-23'),
+(175, 'APARECIDA DE FATIMA MORAES DE SOUZA', '193', '1957-01-21'),
+(176, 'LOURDES GOMES DA SILVA', '5238', '1959-06-07'),
+(177, 'GERALDO FERNANDES NETO', '9985', '1961-05-22'),
+(178, 'NATALINA DE OLIVEIRA DA COSTA', '149', '1962-10-06'),
+(179, 'MARIA SUELI FERREIRA TEIXEIRA', '182', '1963-12-12'),
+(180, 'rosana pires viana', 'ficha solta', '1970-08-07'),
+(181, 'irene evangelista de souza', '3033', '1972-05-27'),
+(182, 'valdeir tortora gonçalves', 'ficha de casa branca', '1982-09-24'),
+(183, 'flavia codgnole da silva', '5128', '1990-10-18'),
+(184, 'NAYARA DE OLIVEIRA', '389', '2000-02-01'),
+(185, 'SALVADOR PEDROSO', '1095', '1938-12-10'),
+(186, 'NEUZA COLUSSI BARROS', '1826', '1938-11-08'),
+(187, 'JOSE RODRIGUES', '10413', '1942-06-02'),
+(188, 'MARIA BENEDITA SANDES CASAGRANDE', 'FICHA DE PINDORAMA', '1949-07-11'),
+(189, 'DIJALMA ARAUJO DOS SANTOS', '12061', '1949-06-14'),
+(190, 'MARGARIDA DONATA DA SILVA', 'SEM INFORMAÇÃO DE FICHA', '1951-12-01'),
+(191, 'RAIMUNDA DO NASCIMENTO', '2365', '1954-06-08'),
+(192, 'CORINA DA SILVA CHAVES', '2917', '1954-04-01'),
+(193, 'ALICE TOLIN RIBEIRO', '1351', '1958-06-23'),
+(194, 'NATIVIDADE BORGES DE OLIVEIRA SANTOS', '1423', '1958-09-05'),
+(195, 'LUZIA BUSINARO PIRES', '10723', '1963-09-10'),
+(196, 'MARIA VALDELICE DE SOUZA GONÇALO', '1214', '1972-07-20'),
+(197, 'SEBASTIANA APARECIDA DA SILVA', 'FICHA SOLTA', '1973-01-21'),
+(198, 'ALEXANDRA GOMES DA SILVA', 'FICHA SOLTA', '1985-07-27'),
+(199, 'ALESSANDRA VALENCIO ZAMPARONI', '9288', '1987-03-04'),
+(200, 'FRANCIELE GOMES DE SOUZA', 'FICHA DE CASA BRANCA', '1991-09-13'),
+(201, 'ANDRESSA DE OLIVEIRA FERREIRA', '1081', '1993-09-30'),
+(202, 'BARBARA APARECIDA MEDICE', 'FICHA DE CASA BRANCA', '2002-10-17'),
+(203, 'TEREZA SOARES JORGE', '4421', '1939-01-05'),
+(204, 'BENEDITA GODOY DE CASTRO', '1293', '1939-05-23'),
+(205, 'EXPEDITA MARIA DA SILVA', '3470', '1945-02-02'),
+(206, 'MARIA DE FATIMA MENDES DE OLIVEIRA', '693', '1954-10-07'),
+(207, 'MARIA DALVA BARBOZA RIBEIRO CALDEIRA', 'SEM INFORMAÇÃO DE FICHA', '1956-01-10'),
+(208, 'PAULO KOITI SATO', 'FICHA DE CASA BRANCA', '1955-12-22'),
+(209, 'MARIA LUCIA DA SILVA', 'FICHA 450 OU 2097', '1969-12-31'),
+(210, 'aldenice de oliveira nobre meneghetti', 'FICHA DE ELIZA', '1971-12-12'),
+(211, 'ELIANE FRANCISCO DOS SANTOS', 'FICHA DE CASA BRANCA', '1989-09-27'),
+(212, 'ELIANA APARECIDA DA LUZ', '130', '1984-02-16'),
+(213, 'GILMAR DOS SANTOS SILVA', 'FICHA DE CASA BRANCA', '1989-12-13'),
+(214, 'ADRIANO DAVID FERREIRA DOS SANTOS', 'FICHA SOLTA', '1993-03-01'),
+(215, 'POLIANA DE SOUZA PERROUD', '1508', '1995-11-15'),
+(216, 'JULIA MARIA CONCECICAO LEITE', '3626', '1984-06-27'),
+(217, 'ADELMO AMADOR', 'FICHA DE ELIZA', '1938-11-07'),
+(218, 'luiz padovani', '10707 ou 10107', '1942-07-08'),
+(219, 'jose rodrigues', '10413', '1942-06-02'),
+(220, 'salvador campos leite', '1095', '1969-03-03'),
+(221, 'creuza jardim rosar', '1944', '1970-11-09'),
+(222, 'tereza leme', '4753', '1974-11-27'),
+(223, 'sonia maria pessoa bandeira', '1489', '1975-12-20'),
+(224, 'paloma tomaz da silva', '2469', '1992-07-16'),
+(225, 'luzia de souza', '5492', '0000-00-00'),
+(226, 'maria jose pereira delai', '2668', '1939-06-04'),
+(227, 'neuza colussi barros', '1826', '2017-08-14'),
+(228, 'tereza soares jorge', '4421', '1939-01-05'),
+(229, 'narcisa de campos', '1332', '1944-07-05'),
+(230, 'conceição eleuterio jardim', '691', '1948-09-09'),
+(231, 'MARIA DA SILVA', 'SEM INFORMAÇÃO DE FICHA', '1951-09-07'),
+(232, 'NATALINA DE OLIVEIRA COSTA', '149', '1962-10-06'),
+(233, 'SUELI JUDITE RAMPAZIO DELAI', 'SEM INFORMAÇÃO DE FICHA', '1965-01-17'),
+(234, 'IDELMA DE BORTOLI MOTA', '585', '1966-08-16'),
+(235, 'IRENE EVANGELISTA DE SOUZA', '3033', '1972-05-27'),
+(236, 'ALEXANDRA GOMES DA SILVA', 'SEM INFORMAÇÃO DE FICHA', '1985-07-27'),
+(237, 'ARIANE THAIS ELIAS DE OLIVEIRA', '3502', '1987-11-15'),
+(238, 'aline borges celeri', 'SEM INFORMAÇÃO DE FICHA', '1990-01-20'),
+(239, 'luiz padovani', '10707', '1952-07-08'),
+(240, 'zilda lisboa da silva', '199', '1947-09-30'),
+(241, 'dijalma araujo dos santos', '12061', '1949-06-14'),
+(242, 'maria benedita sandes casagrande', '12560', '1949-06-14'),
+(243, 'bernadete de lourdes martins nardin', '1257', '1949-07-30'),
+(244, 'marli da silva brant', '749', '1953-04-19'),
+(245, 'aparecida nogueira ribeiro', '1253', '1953-10-24'),
+(246, 'alice tolin ribeiro', '1351', '1958-06-23'),
+(247, 'geraldo fernandes neto', '9985', '1961-05-22'),
+(248, 'olga dancini matiazi filha', '2460', '1963-03-16'),
+(249, 'selma argentom pas', 'ficha de casa branca', '1965-10-05'),
+(250, 'irene cardoso leite', '525', '1966-04-06'),
+(251, 'joao pereira freire', '2767', '1972-06-17'),
+(252, 'kayruza soares de freitas', '479', '1985-03-22'),
+(253, 'flavio lucas reis', 'eliza', '1995-04-18'),
+(254, 'paloma tomaz de freitas', '2449', '1992-07-19'),
+(255, 'sebastiao rodrigues de carvalho', '4686', '1934-04-13'),
+(256, 'aluisio pereira', '4190', '1938-02-08'),
+(257, 'maria ines de azevedo de oliveira', '2313', '1943-05-26'),
+(258, 'severino francisco da silva', '3063', '1944-06-09'),
+(259, 'oneide vieira lopes', '4297', '1947-11-26'),
+(260, 'ana cuba dos santos', '1546', '1951-03-03'),
+(261, 'corina monteiro dos santos', '821', '1951-07-22'),
+(262, 'corina da silva chaves', '2917', '1954-04-01'),
+(263, 'patricia garcia de oliveira', '5044', '1985-10-10'),
+(264, 'pedro jose dos santos', '57', '1934-11-18'),
+(265, 'fidelcina maria oliveira', 'SEM INFORMAÇÃO DE FICHA', '1946-07-05'),
+(266, 'fatima aparecida da silva', '4811', '1955-11-14'),
+(267, 'rosenilda da rocha da silva', '2951', '1970-07-30'),
+(268, 'alexandra dos santos', '959', '1978-01-22'),
+(269, 'marcia dias leite', '2366', '1978-05-02'),
+(270, 'renata candida da silva', 'SEM INFORMAÇÃO DE FICHA', '1982-06-08'),
+(271, 'gilmar dos santos silva', 'ficha de casa branca', '1989-12-13'),
+(272, 'flavia codgnole da silva', '5128', '1990-10-18'),
+(273, 'valter silva', 'SEM INFORMAÇÃO DE FICHA', '1958-05-18'),
+(274, 'rosangela aparecida rogate silva', 'SEM INFORMAÇÃO DE FICHA', '1962-08-03'),
+(275, 'wilson martins pires', '9064', '1963-09-23'),
+(276, 'angelica almeida de lira', '2803', '1979-01-20'),
+(277, 'rafaela dancini matiazi biaca bassalobre', '2998', '1981-04-21'),
+(278, 'elaine aparecida da luz', '130', '1984-02-16'),
+(279, 'adriano david ferreira dos santos', 'SEM INFORMAÇÃO DE FICHA', '1993-03-01'),
+(280, 'andreza panaro de oliveira', '1244', '1994-10-17'),
+(281, 'aparecida rebeca favero', '341', '1941-02-24'),
+(282, 'aparecida rebeca favero', '341', '1941-02-24'),
+(283, 'maria de fatima mendes de oliveira', '693', '1954-10-07'),
+(284, 'cicera anizia da silva', '6185', '1957-02-02'),
+(285, 'lourdes gomes da silva', '5238', '1959-06-07'),
+(286, 'natalina aparecida campanaro ribeiro', '2659', '1959-01-10'),
+(287, 'maria aparecida da silva', '9016', '1960-03-04'),
+(288, 'tereza leme', '4753', '1974-11-27'),
+(289, 'alessandra valencio zamparoni da silva', 'ficha de elisa', '1987-03-04'),
+(290, 'maiko naido pereira da silva', '10837', '1988-05-22'),
+(291, 'thaisa meirely rocha', 'SEM INFORMAÇÃO DE FICHA', '1989-05-16'),
+(292, 'waldecir NARDIm', '3290', '0000-00-00'),
+(293, 'jose rodrigues', '10413', '1942-06-02'),
+(294, 'dijanira lacotiz rigoto', '12057', '1950-11-13'),
+(295, 'aparecida de fatima moraes de souza', '193', '1957-01-21'),
+(296, 'rosa neide borsari santana', 'SEM INFORMAÇÃO DE FICHA', '1963-04-23'),
+(297, 'fabiana marquezine do nascimento', '2063', '1995-03-30'),
+(298, 'maria eva f marquezi', '152', '0000-00-00'),
+(299, 'elizabete regina parrira fenili', '9078', '0000-00-00'),
+(300, 'manoel camacho', 'ficha soçta', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `ficha_odontologica`
+-- Estrutura da tabela `ficha_odontologica`
 --
 
-CREATE TABLE `ficha_odontologica` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `ficha_odontologica` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   `numero` varchar(1000) NOT NULL,
-  `data` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `data` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=65 ;
 
 --
--- Fazendo dump de dados para tabela `ficha_odontologica`
+-- Extraindo dados da tabela `ficha_odontologica`
 --
 
 INSERT INTO `ficha_odontologica` (`id`, `nome`, `numero`, `data`) VALUES
-(3, 'Eduardo Silva Rocha', '1221', '1998-02-06');
+(1, 'Adrian felipe da costa dias', '015', '2005-05-12'),
+(2, 'ABADIA NAYARA SOARES DA SILVA', '001', '1994-09-21'),
+(3, 'ADAIR JOSE DE SOUZA', '002', '1677-04-06'),
+(4, 'ADALCIRENA VITORINO DA COSTA', '003', '0000-00-00'),
+(5, 'ADÃO ALVES  MACHADO', '004', '1944-06-25'),
+(6, 'ADÃO FELISBERTO DA ROSA', '005', '1971-04-30'),
+(7, 'ADELICE COSTA DOS SANTOS', '006', '2006-07-21'),
+(8, 'ADELSON PINEIRO DOS SANTOS', '007', '1972-06-17'),
+(9, 'ADELZEDINA MENDONÇA L RISSATO', '008', '1970-04-17'),
+(10, 'ADEMAR LISBOA DOS SANTOS', '009', '1952-01-08'),
+(11, 'ADEMIR CELERI', '010', '1953-11-27'),
+(12, 'ADEMIR STEL', '011', '1960-09-09'),
+(13, 'ADENILSON NASCIMENTO', '012', '1978-01-14'),
+(14, 'ADILSON ANTUNES L DA SILVA', '013', '2005-06-10'),
+(15, 'adriana conrado de morais', '017', '1982-02-08'),
+(16, 'ADRIAN CAMARGO DE OLIVEIRA', '014', '2005-02-18'),
+(17, 'adrian luciano presidio', '016', '2001-07-07'),
+(18, 'adriana almeida leal', '018', '1993-04-18'),
+(19, 'adriana aparecida marçareli', '019', '1978-01-10'),
+(20, 'adriana correia de noronha', '020', '1984-09-14'),
+(21, 'adriana costa', '021', '1972-08-02'),
+(22, 'adriana garz rodrigues', '022', '1988-01-13'),
+(23, 'adriana lopes dos santos', '023', '1985-01-04'),
+(24, 'adriana pereira da silva', '024', '1980-04-02'),
+(25, 'adriangela r godoi roconlato', '025', '1984-01-04'),
+(26, 'adriano panaro de oliveira', '026', '1988-06-14'),
+(27, 'adriel antonio guadro da silva', '027', '2002-04-09'),
+(28, 'aguinaldo augusto de souza', '029', '1981-12-21'),
+(29, 'aguinaldo caetano da silva', '030', '0000-00-00'),
+(30, 'AILTON BRANCO', '031', '1972-07-25'),
+(31, 'AILTON DOMINGUES LUCIANO', '032', '1979-11-10'),
+(32, 'AILTON SERVIDONE', '033', '1963-02-04'),
+(33, 'ALAINE CRISTINA MARTINS', '034', '1983-05-14'),
+(34, 'ALAN F. DOS REIS MENDES', '035', '1992-02-03'),
+(35, 'ALANA LAURA BIONDA MANZOLI', '036', '2003-10-14'),
+(36, 'ALCID JOSE ROSAR', '037', '1934-06-27'),
+(37, 'ALCIDES FERRAZ DE SOUZA', '038', '1954-10-01'),
+(38, 'ALCIDES MONTEIRO DE LIMA', '039', '1936-12-17'),
+(39, 'ALESANGELA  APARECIDA DE OLIVEIRA', '040', '1981-12-15'),
+(40, 'ALESSANDRA COSTA DOS SANTOS', '041', '2001-10-05'),
+(41, 'ALESSANDRA M. MACIEL', '042', '1982-01-28'),
+(42, 'ALESSANDRA PAULINO DA SILVA', '043', '1980-10-21'),
+(43, 'ALESSANDRA VALENCIO ZAMPARONI', '044', '1987-03-04'),
+(44, 'ALEX ANTONIO DA SILVA', '045', '1986-09-11'),
+(45, 'alex borges', '046', '1992-10-30'),
+(46, 'alex lucas rissato', '047', '1988-10-24'),
+(47, 'alex pacheco', '048', '1987-02-17'),
+(48, 'alexandre aparecido orives', '049', '2001-10-19'),
+(49, 'alexandre francisco mello', '050', '1985-10-31'),
+(50, 'alexandre ribeiro damaceno', '051', '1983-08-14'),
+(51, 'alexandre teresino alves santana', '052', '1984-06-28'),
+(52, 'alexandro sartori dias', '053', '2002-08-13'),
+(53, 'alice cristina lima pereira', '054', '2001-02-01'),
+(54, 'alice s. de souza paixão', '055', '1993-07-01'),
+(55, 'aline alecrim borges', '056', '1989-07-26'),
+(56, 'aline alecrim gouveia', '057', '2002-09-10'),
+(57, 'aline f.comes da silva', '058', '1989-05-15'),
+(58, 'aline galerani mota', '059', '2002-12-01'),
+(59, 'aline maiara dos reis mendes', '060', '1996-04-06'),
+(60, 'aline martins pires', '061', '1993-05-09'),
+(61, 'aline nunes fabri', '062', '1986-01-14'),
+(62, 'aline renata elias de oliveira', '063', '1984-10-03'),
+(63, 'aline xavier tortora', '064', '2001-10-25'),
+(64, 'alison de oliveira do carmo', '065', '1991-10-25');
 
---
--- Índices de tabelas apagadas
---
-
---
--- Índices de tabela `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id`);
-
---
--- Índices de tabela `ficha_medica`
---
-ALTER TABLE `ficha_medica`
-  ADD PRIMARY KEY (`id`);
-
---
--- Índices de tabela `ficha_odontologica`
---
-ALTER TABLE `ficha_odontologica`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT de tabelas apagadas
---
-
---
--- AUTO_INCREMENT de tabela `admin`
---
-ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
---
--- AUTO_INCREMENT de tabela `ficha_medica`
---
-ALTER TABLE `ficha_medica`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
--- AUTO_INCREMENT de tabela `ficha_odontologica`
---
-ALTER TABLE `ficha_odontologica`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

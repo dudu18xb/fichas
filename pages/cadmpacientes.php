@@ -32,21 +32,21 @@ if (isset($_GET["id"])) {
                                 <input type="text" required id="nome"
                                        name="nome" class="form-control" value="<?= $nome; ?>"
                                        data-validation-required-message="Preencha o nome do Cliente"
-                                       placeholder="Preenche o Nome Completo do Cliente ex: João da Silva">
+                                       placeholder="Preenche o Nome Completo do Cliente ex: João da Silva" style="text-transform:uppercase">
                             </div>
 
                             <div class="form-group">
                                 <input type="text" required id="numero"
                                        name="numero" class="form-control"
                                        data-validation-required-message="Preencha o Número de Ficha"
-                                       placeholder="Preencha o Número de Ficha" value="<?= $numero; ?>">
+                                       placeholder="Preencha o Número de Ficha" value="<?= $numero; ?>" style="text-transform:uppercase">
                             </div>
 
                             <div class="form-group">
                                 <input name="data" required
                                        data-validation-required-message="Preencha a Data de Nascimento"
                                        class="form-control"
-                                       data-mask="99/99/9999" placeholder="Somente Números" value="<?= $data; ?>">
+                                       data-mask="99/99/9999" placeholder="DATA DE NASCIMENTO" value="<?= $data; ?>">
                             </div>
 
                             <button type="submit" class="btn btn-primary">Salvar</button>

@@ -39,6 +39,9 @@ if ($_POST) {
                 <a href = 'home.php?pg=listpacodon' class = 'btn btn-success' title = 'Listar'>
                     Visualizar a Lista Novamente
                 </a>
+                <a href = 'home.php?pg=cadopacientes' class = 'btn btn-danger' title = 'Listar'>
+                    Cadastrar Novamente
+                </a>
             </div>";
     } else {
         echo "<div class='alert alert-block alert-danger'>Erro ao Salvar/Alterar</div>";

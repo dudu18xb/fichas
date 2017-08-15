@@ -36,6 +36,9 @@ if ($_POST) {
     if ($consulta->execute()) {
         echo "<div class='alert alert-success'>Registro Salvo/Alterado com sucesso!</div>
             <div class = 'pull-right'>
+                <a href = 'home.php?pg=cadmpacientes' class = 'btn btn-danger' title = 'Cadastrar'>
+                    Cadastrar Novamente
+                </a>                
                 <a href = 'home.php?pg=listpacmedic' class = 'btn btn-success' title = 'Listar'>
                     Visualizar a Lista Novamente
                 </a>
