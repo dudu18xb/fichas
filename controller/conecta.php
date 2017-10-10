@@ -5,7 +5,7 @@
 		$servidor = "localhost";
 		$usuario = "root";
 		$senha = "";
-		$banco = "ficha";
+		$banco = "fichac";
 		$con = new PDO ( "mysql:host=$servidor;
 			dbname=$banco;
 			charset=utf8",

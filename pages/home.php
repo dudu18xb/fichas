@@ -107,6 +107,19 @@ include "../controller/login.php";
                                     <li><a href="home.php?pg=listpacodon"><i class="fa fa-search"></i> Odontologicos</a></li>
                                 </ul>
                             </li>
+                            <li class="submenu">
+                                <a href="#">
+                                    <i class="fa fa-ban"></i> Bloquear Pacientes
+                                    <span class="caret pull-right"></span>
+                                </a>
+                                <!-- Sub menu -->
+                                <ul>
+                                    <li><a href="home.php?pg=listpacmedic"><i class="fa fa-user"></i> Cadastrar Paciente</a></li>
+                                    <li><a href="home.php?pg=listpacodon"><i class="fa fa-ban"></i> Bloquear Paciente</a></li>
+                                    <li><a href="home.php?pg=listpacodon"><i class="fa fa-list"></i> Lista de Pacientes</a></li>
+                                    <li><a href="home.php?pg=listpacodon"><i class="fa fa-list"></i> Lista de Pacientes Bloqueados</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
