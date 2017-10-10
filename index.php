@@ -13,7 +13,7 @@
     <body class="tela-login">
         <div class="container">
 
-            <h2>Painel Administrativo de Fichas<small>Eduardo Rocha</small></h2>
+            <h2>Painel Administrativo de Fichas<small>Xambrê</small></h2>
 
             <form name="login" method="post" action="controller/verificar.php"> 
                 <div class="group">      
@@ -36,6 +36,9 @@
                     <button class="btn btn-primary">Entrar</button>
                 </div>   
             </form>
+            <div class="desenvolvedor">
+                <p>Desenvolvido por: <a href="http://blog-eduardo-rocha.000webhostapp.com/">Eduardo Rocha</a></p>
+            </div>
         </div>
 
 

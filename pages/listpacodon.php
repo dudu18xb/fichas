@@ -1,35 +1,33 @@
 <h1>Lista de Todos os Pacientes Odontológicos</h1>
 
 <div class="pull-right">
-	<a href="home.php?pg=cadopacientes"
-	class="btn btn-primary" 
-	title="Novo Cadastro">
-		Novo Cadastro de Paciente
-	</a>
+    <a href="home.php?pg=cadopacientes"
+       class="btn btn-primary" 
+       title="Novo Cadastro">
+        Novo Cadastro de Paciente
+    </a>
 
-	<a href="home.php?pg=listpacodon"
-	class="btn btn-success" title="Listar">
-		Visualizar Pacientes Cadastrados
-	</a>
+    <a href="home.php?pg=listpacodon"
+       class="btn btn-success" title="Listar">
+        Visualizar Pacientes Cadastrados
+    </a>
 </div>
-
+<img src="../imgs/dente.png" style="width: 9%;float: left;margin-right: 18px;margin-bottom: 13px;">
 <div class="clearfix"></div>
 <form name="form1" method="get" class="form-inline" style="margin-top: -133px;">
-    <label for="busca">Realizar Busca por Nome:</label>
     <input type="hidden" name="pg" value="listpacodon">
-    <input type="text" name="busca" class="form-control buscar-botao" style="text-transform:uppercase">
-    <input type="submit" class="btn btn-success" value="Pesquisar">
+    <input type="text" name="busca" class="form-control buscar-botao" style="text-transform:uppercase" placeholder="Digite o nome do Paciente" width="70%">
+    <input type="submit" class="btn btn-success" value="Pesquisar" style="width: 15%;">
 </form>
 <br>
-<div class="clearfix"></div>
 <table class="table table-striped 
        table-hover table-bordered">
     <thead>
     <th style="text-align: center;">ID</th>
-    <th style="text-align: center;">Nome do Paciente</th>
-    <th style="text-align: center;">Número de Ficha</th>
-    <th style="text-align: center;">Data de Nascimento</th>
-    <th width="19%" style="text-align: center;" >Opções</th>
+    <th width="40%" style="text-align: center;">Nome do Paciente</th>
+    <th width="10%" style="text-align: center;">Número de Ficha</th>
+    <th width="13%" style="text-align: center;">Data de Nascimento</th>
+    <th width="25%" style="text-align: center;" >Opções</th>
 </thead>
 
 <?php
@@ -58,13 +56,13 @@ while ($dados = $consulta->fetch(PDO::FETCH_OBJ)) {
 				<td style='font-size:1.3em;text-transform:uppercase;text-align: center;'>$numero</td>
 				<td style='font-size:1.3em;text-transform:uppercase;text-align: center;'>$data</td>
 				<td>
-                                <!-- 
+                                
 					<a 
 					href='javascript:excluir($id)'
 					class='btn btn-danger'>
 						<i class='glyphicon glyphicon-trash'></i> Excluir
 					</a>
-                                -->
+                                
 					<a href='home.php?pg=cadopacientes&id=$id'
 					class='btn btn-primary'>
 						<i class='glyphicon glyphicon-pencil'></i> Alterar
@@ -79,7 +77,7 @@ while ($dados = $consulta->fetch(PDO::FETCH_OBJ)) {
     function excluir(id) {
         if (confirm("Deseja mesmo excluir este registro?")) {
             //direcionar para a pagina de exclusão de dados
-            location.href = "home.php?pg=excluircliente&id=" + id;
+            location.href = "home.php?pg=excluiro&id=" + id;
         }
     }
 </script>

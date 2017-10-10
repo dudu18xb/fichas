@@ -12,24 +12,22 @@
 		Visualizar Pacientes Cadastrados
 	</a>
 </div>
-
+<img src="../imgs/medico.png" style="width: 9%;float: left;margin-right: 18px;margin-bottom: 13px;">
 <div class="clearfix"></div>
 <form name="form1" method="get" class="form-inline" style="margin-top: -133px;">
-    <label for="busca">Realizar Busca por Nome:</label>
     <input type="hidden" name="pg" value="listpacmedic">
-    <input type="text" name="busca" class="form-control buscar-botao" style="text-transform:uppercase">
-    <input type="submit" class="btn btn-success" value="Pesquisar">
+    <input type="text" name="busca" class="form-control buscar-botao" style="text-transform:uppercase" width="70%" placeholder="Digite o nome do Paciente">
+    <input type="submit" class="btn btn-success" value="Pesquisar" style="width: 15%;">
 </form>
 <br>
-<div class="clearfix"></div>
 <table class="table table-striped 
        table-hover table-bordered">
     <thead>
     <th style="text-align: center;">ID</th>
-    <th style="text-align: center;">Nome do Paciente</th>
-    <th style="text-align: center;">Número de Ficha</th>
-    <th style="text-align: center;">Data de Nascimento</th>
-    <th width="19%" style="text-align: center;" >Opções</th>
+    <th width="40%" style="text-align: center;">Nome do Paciente</th>
+    <th width="10%" style="text-align: center;">Número de Ficha</th>
+    <th width="13%" style="text-align: center;">Data de Nascimento</th>
+    <th width="25%" style="text-align: center;" >Opções</th>
 </thead>
 
 <?php
@@ -55,16 +53,16 @@ while ($dados = $consulta->fetch(PDO::FETCH_OBJ)) {
     echo "<tr>
 				<td style='font-size:1.3em;text-transform:uppercase;text-align: center;'>$id</td>
 				<td style='font-size:1.3em;text-transform:uppercase;text-align: center;'>$nome</td>
-				<td style='font-size:1.3em;text-transform:uppercase;text-align: center;color: #f70606;font-weight: 600;'>$numero</td>
+				<td style='font-size:1.2em;text-transform:uppercase;text-align: center;color: #f70606;font-weight: 600;'>$numero</td>
 				<td style='font-size:1.3em;text-transform:uppercase;text-align: center;'>$data</td>
 				<td>
-                                <!-- 
+                                
 					<a 
 					href='javascript:excluir($id)'
 					class='btn btn-danger'>
 						<i class='glyphicon glyphicon-trash'></i> Excluir
 					</a>
-                                -->
+                                
 					<a href='home.php?pg=cadmpacientes&id=$id'
 					class='btn btn-primary'>
 						<i class='glyphicon glyphicon-pencil'></i> Alterar
@@ -79,7 +77,7 @@ while ($dados = $consulta->fetch(PDO::FETCH_OBJ)) {
     function excluir(id) {
         if (confirm("Deseja mesmo excluir este registro?")) {
             //direcionar para a pagina de exclusão de dados
-            location.href = "home.php?pg=excluircliente&id=" + id;
+            location.href = "home.php?pg=excluirm&id=" + id;
         }
     }
 </script>

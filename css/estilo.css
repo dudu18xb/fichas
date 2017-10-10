@@ -8,10 +8,23 @@ body.tela-login {
 }
 .container.centro-home{
     width: 66%;
-    margin-top: 74px;
     border-radius: 10px;
     padding: 10px 27px 10px;
+    margin: 76px 34px 30px 309px !important;
 }
 .form-control.buscar-botao {
-        width: 63% !important;
+    width: 63% !important;
+}
+.desenvolvedor p {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.desenvolvedor a {
+    color: #873ad8;
+    text-decoration: none;
+}
+.desenvolvedor a:hover {
+    color: #d00f28;
+    font-weight: 900;
 }

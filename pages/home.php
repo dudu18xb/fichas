@@ -9,6 +9,7 @@ include "../controller/login.php";
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="../css/login.css">
         <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
         <link href="../css/styles.css" rel="stylesheet">
         <link href="../css/stats.css" rel="stylesheet">
         <link href="../css/forms.css" rel="stylesheet">
@@ -37,7 +38,7 @@ include "../controller/login.php";
                             <h1><a href="index.html">Fichas - Xambrê</a></h1>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="input-group form">
@@ -49,13 +50,13 @@ include "../controller/login.php";
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="navbar navbar-inverse" role="banner">
                             <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                                 <ul class="nav navbar-nav">
                                     <li class="dropdown">
-                                        <a href="../controller/sair.php" class="dropdown-toggle"><h5>Bem Vindo <?php echo $_SESSION["nome"]; ?> </h5>
-                                            <button  class="btn btn-danger btn-lg btn-block"><i class="icon_close_alt2"></i> Sair</button>
+                                        <a href="../controller/sair.php" class="dropdown-toggle"><h5>Bem Vindo <br><i class="fa fa-user-circle"></i> <?php echo $_SESSION["nome"]; ?> </h5>
+                                            <button  class="btn btn-danger btn-lg"><i class="fa fa-close"></i> Sair</button>
                                         </a>
                                     </li>
                                 </ul>
@@ -68,32 +69,42 @@ include "../controller/login.php";
 
         <div class="page-content">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <div class="sidebar content-box" style="display: block;">
                         <ul class="nav">
                             <!-- Main menu -->
-                            <li class="current"><a href="home.php"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
-                            <li class="current"><a href="home.php"><i class="glyphicon glyphicon-user"></i> Cadastro Usuario Admin</a></li>
+                            <li class="current"><a href="home.php"><i class="fa fa-home"></i> Inicio</a></li>
                             <li class="submenu">
                                 <a href="#">
-                                    <i class="glyphicon glyphicon-list"></i> Cadastros Fichas
+                                    <i class="fa fa-user"></i> Cadastros Usuario SI
                                     <span class="caret pull-right"></span>
                                 </a>
                                 <!-- Sub menu -->
                                 <ul>
-                                    <li><a href="home.php?pg=cadmpacientes">Pacientes Medicos</a></li>
-                                    <li><a href="home.php?pg=cadopacientes">Pacientes Odontologicos</a></li>
+                                    <li><a href="home.php?pg=cadmpacientes"><i class="fa fa-user"></i> Cadastrar Usuario</a></li>
+                                    <li><a href="home.php?pg=cadmpacientes"><i class="fa fa-list"></i> Listar Usuário</a></li>
                                 </ul>
                             </li>
                             <li class="submenu">
                                 <a href="#">
-                                    <i class="glyphicon glyphicon-list"></i> Buscar Fichas
+                                    <i class="fa fa-hospital-o"></i> Cadastros Fichas
                                     <span class="caret pull-right"></span>
                                 </a>
                                 <!-- Sub menu -->
                                 <ul>
-                                    <li><a href="home.php?pg=listpacmedic">Medicos</a></li>
-                                    <li><a href="home.php?pg=listpacodon">Odontologicos</a></li>
+                                    <li><a href="home.php?pg=cadmpacientes"> <i class="fa fa-user-md"></i> Pacientes Medicos</a></li>
+                                    <li><a href="home.php?pg=cadopacientes"><i class="fa fa-user-md"></i> Pacientes Odontologicos</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#">
+                                    <i class="fa fa-search-plus"></i> Buscar Fichas
+                                    <span class="caret pull-right"></span>
+                                </a>
+                                <!-- Sub menu -->
+                                <ul>
+                                    <li><a href="home.php?pg=listpacmedic"><i class="fa fa-search"></i> Medicos</a></li>
+                                    <li><a href="home.php?pg=listpacodon"><i class="fa fa-search"></i> Odontologicos</a></li>
                                 </ul>
                             </li>
                         </ul>

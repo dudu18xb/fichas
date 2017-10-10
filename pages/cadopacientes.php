@@ -1,3 +1,15 @@
+<div class="pull-right">
+    <a href="home.php?pg=cadopacientes"
+       class="btn btn-primary" 
+       title="Novo Cadastro">
+        Novo Cadastro de Paciente
+    </a>
+
+    <a href="home.php?pg=listpacodon"
+       class="btn btn-success" title="Listar">
+        Visualizar Pacientes Cadastrados
+    </a>
+</div>
 <?php
 //edição dos dados
 $id = $nome = $numero = $data = "";
@@ -20,39 +32,41 @@ if (isset($_GET["id"])) {
 
 <div class="col-md-10">
     <div class="row">
+        <h1 class="panel-body">Cadastro de Pacientes Odontológicos</h1>
         <div class="col-md-12">
-            <div class="content-box-large">
+            <div class="content-box-large" style="background-image: url('../imgs/dente1.png');background-position: center;">
                 <div class="panel-heading">
-                    <div class="panel-title"><h3>Cadastro de Fichas - Pacientes Odontológicos</h3></div>
-                </div>
-                <div class="panel-body">
-                    <form name="form1" method="post" novalidate action="home.php?pg=saveo">
-                        <input type="hidden" name="id"
-                               class="form-control" readonly
-                               value="<?= $id; ?>">
-                        <div class="form-group">
-                            <input type="text" required id="nome"
-                                   name="nome" class="form-control" value="<?= $nome; ?>"
-                                   data-validation-required-message="Preencha o nome do Cliente"
-                                   placeholder="Preenche o Nome Completo do Cliente ex: João da Silva" style="text-transform:uppercase">
-                        </div>
+                    <div class="panel-body">
+                        <form name="form1" method="post" novalidate action="home.php?pg=saveo">
+                            <input type="hidden" name="id"
+                                   class="form-control" readonly
+                                   value="<?= $id; ?>">
+                            <div class="form-group">
+                                <h4>Preencha o nome do Paciente:</h4>
+                                <input type="text" required id="nome"
+                                       name="nome" class="form-control" value="<?= $nome; ?>"
+                                       data-validation-required-message="Preencha o nome do Cliente"
+                                       placeholder="Nome do paciente" style="text-transform:uppercase">
+                            </div>
+                            <div class="form-group">
+                                <h4>Preencha o número de ficha:</h4>
+                                <input type="text" required id="numero"
+                                       name="numero" class="form-control"
+                                       data-validation-required-message="Preencha o Número de Ficha"
+                                       placeholder="Preencha o Número de Ficha" value="<?= $numero; ?>" style="text-transform:uppercase">
+                            </div>
 
-                        <div class="form-group">
-                            <input type="text" required id="numero"
-                                   name="numero" class="form-control"
-                                   data-validation-required-message="Preencha o Número de Ficha"
-                                   placeholder="Preencha o Número de Ficha" value="<?= $numero; ?>" style="text-transform:uppercase">
-                        </div>
+                            <div class="form-group">
+                                <h4>Preencha a Data de Nascimento:</h4>
+                                <input name="data" required
+                                       data-validation-required-message="Preencha a Data de Nascimento"
+                                       class="form-control"
+                                       data-mask="99/99/9999" placeholder="DATA DE NASCIMENTO" value="<?= $data; ?>">
+                            </div>
 
-                        <div class="form-group">
-                            <input name="data" required
-                                   data-validation-required-message="Preencha a Data de Nascimento"
-                                   class="form-control"
-                                   data-mask="99/99/9999" placeholder="DATA DE NASCIMENTO" value="<?= $data; ?>">
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">Salvar</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
