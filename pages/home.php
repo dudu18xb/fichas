@@ -81,8 +81,8 @@ include "../controller/login.php";
                                 </a>
                                 <!-- Sub menu -->
                                 <ul>
-                                    <li><a href="home.php?pg=cadmpacientes"><i class="fa fa-user"></i> Cadastrar Usuario</a></li>
-                                    <li><a href="home.php?pg=cadmpacientes"><i class="fa fa-list"></i> Listar Usuário</a></li>
+                                    <li><a href="home.php?pg=cadusuario"><i class="fa fa-user"></i> Cadastrar Usuario</a></li>
+                                    <li><a href="home.php?pg=listausuario"><i class="fa fa-list"></i> Listar Usuário</a></li>
                                 </ul>
                             </li>
                             <li class="submenu">
