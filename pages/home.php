@@ -114,10 +114,10 @@ include "../controller/login.php";
                                 </a>
                                 <!-- Sub menu -->
                                 <ul>
-                                    <li><a href="home.php?pg=listpacmedic"><i class="fa fa-user"></i> Cadastrar Paciente</a></li>
-                                    <li><a href="home.php?pg=listpacodon"><i class="fa fa-ban"></i> Bloquear Paciente</a></li>
-                                    <li><a href="home.php?pg=listpacodon"><i class="fa fa-list"></i> Lista de Pacientes</a></li>
-                                    <li><a href="home.php?pg=listpacodon"><i class="fa fa-list"></i> Lista de Pacientes Bloqueados</a></li>
+                                    <li><a href="home.php?pg=cadpacientebloq"><i class="fa fa-user"></i> Cadastrar Pacientes</a></li>
+                                    <li><a href="home.php?pg=cadbloqueio"><i class="fa fa-ban"></i> Bloquear Paciente</a></li>
+                                    <li><a href="home.php?pg=listpacientescad"><i class="fa fa-list"></i> Lista de Pacientes</a></li>
+                                    <li><a href="home.php?pg=listpacientesbloqqueado"><i class="fa fa-list"></i> Lista de Pacientes Bloqueados</a></li>
                                 </ul>
                             </li>
                         </ul>
