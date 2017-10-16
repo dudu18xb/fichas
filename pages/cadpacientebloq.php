@@ -1,11 +1,11 @@
 <div class="pull-right">
-    <a href="home.php?pg=cadusuario"
+    <a href="home.php?pg=cadpacientebloq"
        class="btn btn-primary" 
        title="Novo Cadastro">
         Novo Cadastro de Usuario
     </a>
 
-    <a href="home.php?pg=listausuario"
+    <a href="home.php?pg=listpacientescad"
        class="btn btn-success" title="Listar">
         Cadastro de Pacientes
     </a>
@@ -17,7 +17,7 @@ $id = $nome = $datanasc = "";
 if (isset($_GET["id"])) {
     $id = trim($_GET["id"]);
     //sql para selecionar o clientes
-    $sql = "select * from admin where id = ? limit 1";
+    $sql = "select * from paciente where id = ? limit 1";
     $consulta = $con->prepare($sql);
     $consulta->bindParam(1, $id);
     $consulta->execute();
@@ -49,7 +49,7 @@ if (isset($_GET["id"])) {
                             </div>
                             <div class="form-group">
                                 <h4>Preencha a Data de Nascimento:</h4>
-                                <input name="data" required
+                                <input name="datanasc" required id="datanasc"
                                        data-validation-required-message="Preencha a Data de Nascimento"
                                        class="form-control"
                                        data-mask="99/99/9999" placeholder="Data de Nascimento" value="<?= $datanasc; ?>">
