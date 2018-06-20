@@ -1,6 +1,6 @@
 <section class="content-header">
   <h1>
-    <?php echo __('Usuario'); ?>
+    <?php echo __('User'); ?>
   </h1>
   <ol class="breadcrumb">
     <li>
@@ -23,11 +23,11 @@
                 <dl class="dl-horizontal">
                                                                                                                 <dt><?= __('Login') ?></dt>
                                         <dd>
-                                            <?= h($usuario->login) ?>
+                                            <?= h($user->login) ?>
                                         </dd>
                                                                                                                                                             <dt><?= __('Nome') ?></dt>
                                         <dd>
-                                            <?= h($usuario->nome) ?>
+                                            <?= h($user->nome) ?>
                                         </dd>
                                                                                                                                                                                                                     
                                             

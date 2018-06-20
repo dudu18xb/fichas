@@ -12,7 +12,7 @@ class Usuarios extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('usuarios');
+        $table = $this->table('users');
         $table->addColumn('login', 'string', [
             'default' => null,
             'limit' => 255,

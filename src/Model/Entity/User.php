@@ -2,11 +2,10 @@
 namespace App\Model\Entity;
 
 use Cake\Auth\DefaultPasswordHasher; // Add this line
-
 use Cake\ORM\Entity;
 
 /**
- * Usuario Entity
+ * User Entity
  *
  * @property int $id
  * @property string $login
@@ -15,7 +14,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  */
-class Usuario extends Entity
+class User extends Entity
 {
 
     /**
@@ -43,11 +42,6 @@ class Usuario extends Entity
     protected $_hidden = [
         'password'
     ];
-    /**
-     * Fields that are excluded from JSON versions of the entity.
-     *
-     * @var array
-     */
     protected function _setPassword($value)
     {
         if (strlen($value)) {

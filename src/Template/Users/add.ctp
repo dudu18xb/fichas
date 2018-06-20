@@ -1,6 +1,6 @@
 <section class="content-header">
   <h1>
-    Usuario
+    User
     <small><?= __('Add') ?></small>
   </h1>
   <ol class="breadcrumb">
@@ -22,7 +22,7 @@
         </div>
         <!-- /.box-header -->
         <!-- form start -->
-        <?= $this->Form->create($usuario, array('role' => 'form')) ?>
+        <?= $this->Form->create($user, array('role' => 'form')) ?>
           <div class="box-body">
           <?php
             echo $this->Form->input('login');
