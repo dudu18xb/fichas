@@ -29,6 +29,10 @@
                                         <dd>
                                             <?= h($user->nome) ?>
                                         </dd>
+                                                                                                                                                            <dt><?= __('Role') ?></dt>
+                                        <dd>
+                                            <?= h($user->role) ?>
+                                        </dd>
                                                                                                                                                                                                                     
                                             
                                                                                                                                             

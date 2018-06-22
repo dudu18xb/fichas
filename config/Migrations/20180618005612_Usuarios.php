@@ -23,6 +23,11 @@ class Usuarios extends AbstractMigration
             'limit' => 255,
             'null' => false,
         ]);
+        $table->addColumn('role', 'string', [
+            'default' => null,
+            'limit' => 20,
+            'null' => false,
+        ]);
         $table->addColumn('password', 'string', [
             'default' => null,
             'limit' => 255,

@@ -20,6 +20,7 @@ class UsersFixture extends TestFixture
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'login' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'nome' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'role' => ['type' => 'string', 'length' => 20, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'password' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
@@ -45,9 +46,10 @@ class UsersFixture extends TestFixture
                 'id' => 1,
                 'login' => 'Lorem ipsum dolor sit amet',
                 'nome' => 'Lorem ipsum dolor sit amet',
+                'role' => 'Lorem ipsum dolor ',
                 'password' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-06-20 01:40:35',
-                'modified' => '2018-06-20 01:40:35'
+                'created' => '2018-06-22 02:26:40',
+                'modified' => '2018-06-22 02:26:40'
             ],
         ];
         parent::init();

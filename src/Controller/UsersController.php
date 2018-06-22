@@ -1,6 +1,7 @@
 <?php
-namespace App\Controller;
 
+namespace App\Controller;
+use Cake\Event\Event;
 use App\Controller\AppController;
 
 /**
@@ -12,20 +13,19 @@ use App\Controller\AppController;
  */
 class UsersController extends AppController
 {
-    public function initialize()
+//    public function beforeFilter(Event $event)
+//    {
+//        parent::beforeFilter($event);
+//        $this->Auth->allow(['add', 'logout']);
+//        $this->Auth->allow('edit');
+//    }
+    public function beforeFilter(Event $event)
     {
-        parent::initialize();
-        // Add the 'add' action to the allowed actions list.
-        $this->Auth->allow(['logout', 'add']);
-        $this->Auth->allow(['logout', 'edit']);
+        parent::beforeFilter($event);
+        //$this->Auth->allow(['add', 'logout','edit', 'delete']);
     }
-    public function isAuthorized($user)
-    {
-    // By default deny access.
-        return false;
-    }
-
     /**
+     *
      * Index method
      *
      * @return \Cake\Http\Response|void
@@ -33,7 +33,6 @@ class UsersController extends AppController
     public function index()
     {
         $users = $this->paginate($this->Users);
-
         $this->set(compact('users'));
     }
 
@@ -130,9 +129,19 @@ class UsersController extends AppController
             $this->Flash->error('Usuário ou senha incorretos');
         }
     }
+
     public function logout()
     {
         $this->Flash->success('Você saiu com sucesso.');
         return $this->redirect($this->Auth->logout());
+    }
+
+    public function isAuthorized($user)
+    {
+        // Todos os usuários registrados podem adicionar artigos
+        if ($this->request->getParam('action') === 'add') {
+            return true;
+        }
+        return parent::isAuthorized($user);
     }
 }

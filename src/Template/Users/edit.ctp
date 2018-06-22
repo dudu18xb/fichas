@@ -27,6 +27,7 @@
           <?php
             echo $this->Form->input('login');
             echo $this->Form->input('nome');
+            echo $this->Form->input('role');
             echo $this->Form->input('password');
           ?>
           </div>

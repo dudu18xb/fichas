@@ -105,4 +105,19 @@ class FichasodontologicasController extends AppController
         }
         return $this->redirect(['action' => 'index']);
     }
+
+    public function isAuthorized($user)
+    {
+        // Todos os usuários registrados podem adicionar artigos
+        if ($this->request->getParam('action') === 'add') {
+            return true;
+        }
+        if ($this->request->getParam('action') === 'edit') {
+            return true;
+        }
+        if ($this->request->getParam('action') === 'delete') {
+            return true;
+        }
+        return parent::isAuthorized($user);
+    }
 }
