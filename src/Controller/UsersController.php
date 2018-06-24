@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controller;
+
 use Cake\Event\Event;
 use App\Controller\AppController;
 
@@ -19,11 +20,21 @@ class UsersController extends AppController
 //        $this->Auth->allow(['add', 'logout']);
 //        $this->Auth->allow('edit');
 //    }
+
+    public function initialize()
+    {
+        parent::initialize();
+
+        $this->loadComponent('Search.Prg', [
+            'actions' => ['index']
+        ]);
+    }
     public function beforeFilter(Event $event)
     {
         parent::beforeFilter($event);
         //$this->Auth->allow(['add', 'logout','edit', 'delete']);
     }
+
     /**
      *
      * Index method
@@ -32,8 +43,10 @@ class UsersController extends AppController
      */
     public function index()
     {
-        $users = $this->paginate($this->Users);
-        $this->set(compact('users'));
+        $users = $this->Users
+            ->find('search', ['search' => $this->request->getQueryParams()]);
+        //die(debug($users));
+        $this->set('users', $this->paginate($users));
     }
 
     /**
@@ -63,10 +76,10 @@ class UsersController extends AppController
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->data);
             if ($this->Users->save($user)) {
-                $this->Flash->success(__('The {0} has been saved.', 'User'));
+                $this->Flash->success(__('O {0} foi salvo.', 'User'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The {0} could not be saved. Please, try again.', 'User'));
+                $this->Flash->error(__('O {0} Não pode ser salvo, Por Favor tente novamente', 'User'));
             }
         }
         $this->set(compact('user'));
@@ -88,10 +101,10 @@ class UsersController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $user = $this->Users->patchEntity($user, $this->request->data);
             if ($this->Users->save($user)) {
-                $this->Flash->success(__('The {0} has been saved.', 'User'));
+                $this->Flash->success(__('O {0} Foi salvo com sucesso.', 'User'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The {0} could not be saved. Please, try again.', 'User'));
+                $this->Flash->error(__('O {0} não pode ser salvo. Por favor tente novamente', 'User'));
             }
         }
         $this->set(compact('user'));
@@ -110,9 +123,9 @@ class UsersController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
         if ($this->Users->delete($user)) {
-            $this->Flash->success(__('The {0} has been deleted.', 'User'));
+            $this->Flash->success(__('O {0} foi deletado', 'User'));
         } else {
-            $this->Flash->error(__('The {0} could not be deleted. Please, try again.', 'User'));
+            $this->Flash->error(__('O {0} não pode ser salvo. Por favor tente novamente.', 'User'));
         }
         return $this->redirect(['action' => 'index']);
     }

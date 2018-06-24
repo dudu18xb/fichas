@@ -233,3 +233,6 @@ Configure::write('Theme', [
     'folder' => ROOT,
     'skin' => 'blue' // default is 'blue'
 ]);
+Plugin::load('Search');
+
+Plugin::load('Search');

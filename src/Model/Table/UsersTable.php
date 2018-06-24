@@ -37,6 +37,29 @@ class UsersTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+        $this->addBehavior('Search.Search', [
+            'emptyValues' => ['']
+        ]); // adicionando o comportamento
+
+        $this->searchManager()
+            ->value('login')
+            // Here we will alias the 'q' query param to search the `Articles.title`
+            // field and the `Articles.content` field, using a LIKE match, with `%`
+            // both before and after.
+            ->add('q', 'Search.Like', [
+                'before' => true,
+                'after' => true,
+                'fieldMode' => 'OR',
+                'comparison' => 'LIKE',
+                'wildcardAny' => '*',
+                'wildcardOne' => '?',
+                'field' => ['login', 'nome']
+            ])
+            ->add('foo', 'Search.Callback', [
+                'callback' => function ($query, $args, $filter) {
+                    // Modify $query as required
+                }
+            ]);
     }
 
     /**
@@ -91,4 +114,9 @@ class UsersTable extends Table
 
         return $rules;
     }
+
+    /**
+     * @return \Search\Manager
+     */
+
 }
