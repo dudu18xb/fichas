@@ -16,3 +16,6 @@
 
 .content-header > .breadcrumb > li > a {
   font-size: 16px; }
+
+.sidebar-menu li a:hover svg path {
+  fill: #fff; }

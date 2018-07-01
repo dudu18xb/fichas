@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2e41465-c545-4cb0-9e82-4e628c866102" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webroot/css/painel/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cakephp3.5_adminLTE_integration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cakephp3.5_adminLTE_integration.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Table/UsersTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/UsersTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Users/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Users/add.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Users/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Users/edit.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Users/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Users/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Users/view.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Users/view.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/painel/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/painel/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/painel/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/painel/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,11 +18,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthComponent.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php">
+      <file leaf-file-name="sidebar-menu.ctp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/sidebar-menu.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="491" column="14" lean-forward="true" selection-start-line="491" selection-start-column="14" selection-end-line="491" selection-end-column="14" />
+            <state relative-caret-position="238">
+              <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+              <folding>
+                <element signature="n#svg#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.ctp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/footer.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/css/painel/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav-top.ctp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/nav-top.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-272">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -45,11 +63,21 @@
     <findStrings>
       <find>content-wrapper</find>
       <find>login-logo</find>
-      <find>user-panel</find>
       <find>Alexander Pierce</find>
       <find>skin-blue</find>
       <find>logo-lg</find>
       <find>You are not authorized to access that location.</find>
+      <find>user-panel</find>
+      <find>dropdown-toggle</find>
+      <find>dropdown user user-</find>
+      <find>navbar-custom-menu</find>
+      <find>user-image</find>
+      <find>control-sidebar</find>
+      <find>Perfil</find>
+      <find>main-sidebar</find>
+      <find>sidebar-menu</find>
+      <find>active</find>
+      <find>main-footer</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Eduardo Rocha\Documents\Projetos\PHP\fichas</dir>
@@ -74,7 +102,6 @@
         <option value="$PROJECT_DIR$/src/Template/Usuarios/login.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/UsuariosController.php" />
         <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/user-panel.ctp" />
-        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/nav-top.ctp" />
         <option value="$PROJECT_DIR$/config/Migrations/20180618005612_Usuarios.php" />
         <option value="$PROJECT_DIR$/src/Model/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Controller/FichasmedicasController.php" />
@@ -85,12 +112,15 @@
         <option value="$PROJECT_DIR$/src/Model/Table/UsersTable.php" />
         <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Layout/default.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Users/index.ctp" />
-        <option value="$PROJECT_DIR$/webroot/css/painel/style.scss" />
         <option value="$PROJECT_DIR$/src/Template/Users/view.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Users/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Users/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/UsersController.php" />
         <option value="$PROJECT_DIR$/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php" />
+        <option value="$PROJECT_DIR$/webroot/css/painel/style.scss" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/nav-top.ctp" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/sidebar-menu.ctp" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/footer.ctp" />
       </list>
     </option>
   </component>
@@ -158,10 +188,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="95" />
-    <option name="y" value="77" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -175,68 +205,6 @@
             <path>
               <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
               <item name="fichas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="Table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-              <item name="Users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="webroot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="webroot" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="webroot" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="painel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,15 +248,18 @@
       <workItem from="1529367756260" duration="5201000" />
       <workItem from="1529455630234" duration="8260000" />
       <workItem from="1529629814072" duration="6827000" />
-      <workItem from="1529784649049" duration="9481000" />
+      <workItem from="1529784649049" duration="9696000" />
+      <workItem from="1529976846190" duration="885000" />
+      <workItem from="1530396602922" duration="1995000" />
+      <workItem from="1530480311373" duration="1545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34968000" />
+    <option name="totallyTimeSpent" value="39608000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -297,7 +268,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24816984" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28125" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -308,9 +279,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,47 +291,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Template/Users/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/nav-top.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3859">
-          <caret line="227" selection-start-line="227" selection-end-line="227" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-          <folding>
-            <element signature="e#35#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Users/login.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/UsersTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="e#34#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/UsuariosController.php" />
     <entry file="file://$PROJECT_DIR$/src/Controller/PagesController.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -444,30 +374,11 @@
         <state relative-caret-position="-306" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/user-panel.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/FichasodontologicasTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Table/UsuariosTable.php" />
     <entry file="file://$PROJECT_DIR$/src/Template/Users/login.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/nav-top.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="227" selection-start-line="227" selection-end-line="227" />
         </state>
       </provider>
     </entry>
@@ -499,9 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-388">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#35#71#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -541,9 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="e#604#635#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,16 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="51" column="62" lean-forward="true" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="72" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/css/painel/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -609,27 +504,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="462" column="37" lean-forward="true" selection-start-line="462" selection-start-column="37" selection-end-line="462" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="1822">
           <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/FichasodontologicasTable.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Table/UsersTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
+        <state relative-caret-position="853">
           <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/FichasmedicasTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/user-panel.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Pages/documentation.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1588">
+          <caret line="791" column="35" selection-start-line="791" selection-start-column="20" selection-end-line="791" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Layout/top.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/css/painel/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/nav-top.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/sidebar-menu.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
           <folding>
-            <element signature="e#34#53#0#PHP" expanded="true" />
+            <element signature="n#svg#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php">
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/footer.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="491" column="14" lean-forward="true" selection-start-line="491" selection-start-column="14" selection-end-line="491" selection-end-column="14" />
+        <state relative-caret-position="255">
+          <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
         </state>
       </provider>
     </entry>
