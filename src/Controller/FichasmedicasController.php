@@ -13,6 +13,14 @@ use App\Controller\AppController;
 class FichasmedicasController extends AppController
 {
 
+    public function initialize()
+    {
+        parent::initialize();
+
+        $this->loadComponent('Search.Prg', [
+            'actions' => ['index']
+        ]);
+    }
     /**
      * Index method
      *
@@ -20,9 +28,9 @@ class FichasmedicasController extends AppController
      */
     public function index()
     {
-        $fichasmedicas = $this->paginate($this->Fichasmedicas);
-
-        $this->set(compact('fichasmedicas'));
+        $fichasmedicas = $this->Fichasmedicas
+            ->find('search', ['search' => $this->request->getQueryParams()]);
+        $this->set('fichasmedicas', $this->paginate($fichasmedicas));
     }
 
     /**

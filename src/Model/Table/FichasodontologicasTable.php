@@ -35,6 +35,29 @@ class FichasodontologicasTable extends Table
         $this->setTable('fichasodontologicas');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+        $this->addBehavior('Search.Search', [
+            'emptyValues' => ['']
+        ]); // adicionando o comportamento
+
+        $this->searchManager()
+            ->value('nome')
+            // Here we will alias the 'q' query param to search the `Articles.title`
+            // field and the `Articles.content` field, using a LIKE match, with `%`
+            // both before and after.
+            ->add('q', 'Search.Like', [
+                'before' => true,
+                'after' => true,
+                'fieldMode' => 'OR',
+                'comparison' => 'LIKE',
+                'wildcardAny' => '*',
+                'wildcardOne' => '?',
+                'field' => ['nome', 'numero']
+            ])
+            ->add('foo', 'Search.Callback', [
+                'callback' => function ($query, $args, $filter) {
+                    // Modify $query as required
+                }
+            ]);
 
         $this->addBehavior('Timestamp');
     }

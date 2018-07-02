@@ -1,11 +1,11 @@
 <section class="content-header">
   <h1>
-    Fichasodontologica
-    <small><?= __('Add') ?></small>
+    Fichas Médicas
+      <small><?= __('Página de Cadastro') ?></small>
   </h1>
   <ol class="breadcrumb">
     <li>
-    <?= $this->Html->link('<i class="fa fa-dashboard"></i> '.__('Back'), ['action' => 'index'], ['escape' => false]) ?>
+    <?= $this->Html->link('<i class="fa fa-dashboard"></i> '.__('Voltar'), ['action' => 'index'], ['escape' => false]) ?>
     </li>
   </ol>
 </section>
@@ -18,21 +18,21 @@
       <!-- general form elements -->
       <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title"><?= __('Form') ?></h3>
+            <h3 class="box-title"><?= __('Formulário') ?></h3>
         </div>
         <!-- /.box-header -->
         <!-- form start -->
         <?= $this->Form->create($fichasodontologica, array('role' => 'form')) ?>
           <div class="box-body">
           <?php
-            echo $this->Form->input('nome');
-            echo $this->Form->input('numero');
-            echo $this->Form->input('data', ['empty' => true, 'default' => '', 'class' => 'datepicker form-control', 'type' => 'text']);
+            echo $this->Form->input('nome',['label' => 'Nome']);
+            echo $this->Form->input('numero',['label' => 'Número']);
+            echo $this->Form->input('data', ['label' => 'Data de Nascimento','empty' => true, 'default' => '', 'class' => 'datepicker form-control', 'type' => 'text']);
           ?>
           </div>
           <!-- /.box-body -->
           <div class="box-footer">
-            <?= $this->Form->button(__('Save')) ?>
+            <?= $this->Form->button(__('Salvar')) ?>
           </div>
         <?= $this->Form->end() ?>
       </div>
@@ -59,10 +59,10 @@ $this->Html->script([
   $(function () {
     //Datemask mm/dd/yyyy
     $(".datepicker")
-        .inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"})
+        .inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"})
         .datepicker({
-            language:'en',
-            format: 'mm/dd/yyyy'
+            language:'pt-BR',
+            format: 'dd/mm/yyyy'
         });
   });
 </script>

@@ -11,19 +11,15 @@
   <div class="row">
     <div class="col-xs-12">
       <div class="box">
-        <div class="box-header">
-          <h3 class="box-title"><?= __('Lista Completa') ?> Fichas Médicas</h3>
-          <div class="box-tools">
-            <form action="<?php echo $this->Url->build(); ?>" method="POST">
-              <div class="input-group input-group-sm"  style="width: 180px;">
-                <input type="text" name="search" class="form-control" placeholder="<?= __('Efeturar uma Busca') ?>">
-                <span class="input-group-btn">
-                <button class="btn btn-info btn-flat" type="submit"><?= __('Buscar') ?></button>
-                </span>
+          <div class="box-header">
+              <?php echo $this->Form->create(null, ['valueSources' => 'fichasmedicas']); ?>
+              <div class="input-group input-group-sm" style="width: 100%;float: left;display: flex;flex-wrap: nowrap;">
+                  <?php echo $this->Form->control('q', ['label' => 'Buscar Pelo Nome']); ?>
+                  <?php echo $this->Form->button('Buscar', ['type' => 'submit', ['class' => 'btn btn-info btn-flat']]); ?>
+                  <?php echo $this->Form->button('Resetar', ['action' => 'index', ['class' => 'btn btn-sucess btn-flat']]); ?>
               </div>
-            </form>
+              <?php echo $this->Form->end(); ?>
           </div>
-        </div>
         <!-- /.box-header -->
         <div class="box-body table-responsive no-padding">
           <table class="table table-hover">

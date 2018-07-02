@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller;
 
 use App\Controller\AppController;
@@ -13,6 +14,15 @@ use App\Controller\AppController;
 class FichasodontologicasController extends AppController
 {
 
+    public function initialize()
+    {
+        parent::initialize();
+
+        $this->loadComponent('Search.Prg', [
+            'actions' => ['index']
+        ]);
+    }
+
     /**
      * Index method
      *
@@ -20,9 +30,9 @@ class FichasodontologicasController extends AppController
      */
     public function index()
     {
-        $fichasodontologicas = $this->paginate($this->Fichasodontologicas);
-
-        $this->set(compact('fichasodontologicas'));
+        $fichasodontologicas = $this->Fichasodontologicas
+            ->find('search', ['search' => $this->request->getQueryParams()]);
+        $this->set('fichasodontologicas', $this->paginate($fichasodontologicas));
     }
 
     /**
