@@ -56,7 +56,7 @@ class AppController extends Controller
                 ]
             ],
             'loginRedirect' => [
-                'controller' => 'PaginaInicial',
+                'controller' => 'PaginaInicialController',
                 'action' => 'index'
             ],
             'loginAction' => [
