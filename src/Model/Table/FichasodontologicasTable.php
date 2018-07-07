@@ -100,7 +100,7 @@ class FichasodontologicasTable extends Table
     public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
     {
         if (isset($data['data'])) {
-            $data['data'] = Time::parseDate($data['data'], 'Y-M-d');
+            $data['data'] = Time::parseDate($data['data']);
         }
     }
 }
