@@ -1,8 +1,6 @@
 <?php
 namespace App\Controller;
-
 use App\Controller\AppController;
-
 /**
  * Fichasmedicas Controller
  *
@@ -12,11 +10,9 @@ use App\Controller\AppController;
  */
 class FichasmedicasController extends AppController
 {
-
     public function initialize()
     {
         parent::initialize();
-
         $this->loadComponent('Search.Prg', [
             'actions' => ['index']
         ]);
@@ -32,7 +28,6 @@ class FichasmedicasController extends AppController
             ->find('search', ['search' => $this->request->getQueryParams()]);
         $this->set('fichasmedicas', $this->paginate($fichasmedicas));
     }
-
     /**
      * View method
      *
@@ -45,10 +40,8 @@ class FichasmedicasController extends AppController
         $fichasmedica = $this->Fichasmedicas->get($id, [
             'contain' => []
         ]);
-
         $this->set('fichasmedica', $fichasmedica);
     }
-
     /**
      * Add method
      *
@@ -69,7 +62,6 @@ class FichasmedicasController extends AppController
         $this->set(compact('fichasmedica'));
         $this->set('_serialize', ['fichasmedica']);
     }
-
     /**
      * Edit method
      *
@@ -94,7 +86,6 @@ class FichasmedicasController extends AppController
         $this->set(compact('fichasmedica'));
         $this->set('_serialize', ['fichasmedica']);
     }
-
     /**
      * Delete method
      *
@@ -113,7 +104,6 @@ class FichasmedicasController extends AppController
         }
         return $this->redirect(['action' => 'index']);
     }
-
     public function isAuthorized($user)
     {
         // Todos os usuários registrados podem adicionar artigos

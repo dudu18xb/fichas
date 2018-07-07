@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2e41465-c545-4cb0-9e82-4e628c866102" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/cakephp3.5_adminLTE_integration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cakephp3.5_adminLTE_integration.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bootstrap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FichasmedicasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FichasmedicasController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FichasodontologicasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FichasodontologicasController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/FichasmedicasTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/FichasmedicasTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/FichasodontologicasTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/FichasodontologicasTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Fichasmedicas/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Fichasmedicas/add.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Fichasmedicas/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Fichasmedicas/edit.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/PaginaInicial/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/PaginaInicial/index.ctp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,24 +29,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/bootstrap.php">
+      <file leaf-file-name="FichasmedicasController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/FichasmedicasController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="107" column="40" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
+            <state relative-caret-position="-491">
+              <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
+      <file leaf-file-name="add.ctp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Template/Fichasmedicas/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="58" column="56" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
-              <folding>
-                <element signature="e#6#575#0#PHP" expanded="true" />
-                <element signature="e#604#635#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="332">
+              <caret line="29" column="173" selection-start-line="29" selection-start-column="173" selection-end-line="29" selection-end-column="173" />
             </state>
           </provider>
         </entry>
@@ -43,11 +50,8 @@
       <file leaf-file-name="FichasmedicasTable.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Table/FichasmedicasTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
-              <folding>
-                <element signature="e#34#53#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1266">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -56,13 +60,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>content-wrapper</find>
-      <find>login-logo</find>
-      <find>Alexander Pierce</find>
       <find>skin-blue</find>
       <find>logo-lg</find>
       <find>You are not authorized to access that location.</find>
-      <find>user-panel</find>
       <find>dropdown-toggle</find>
       <find>dropdown user user-</find>
       <find>navbar-custom-menu</find>
@@ -73,16 +73,23 @@
       <find>sidebar-menu</find>
       <find>active</find>
       <find>main-footer</find>
-      <find>date_default_timezone_set</find>
       <find>setlocale</find>
       <find>setToStringFormat</find>
       <find>I18n</find>
-      <find>useLocaleParser</find>
       <find>useImmutable</find>
       <find>env</find>
       <find>defaultLocale</find>
       <find>The Fichasmedica could not be saved. Please, try again.</find>
       <find>ini_set</find>
+      <find>user-panel</find>
+      <find>sidebar-form</find>
+      <find>Clique aqui ver como funciona o Sistema</find>
+      <find>useLocaleParser</find>
+      <find>18</find>
+      <find>Plugin::load('ADmad/I18n');</find>
+      <find>admad</find>
+      <find>friendsofcake</find>
+      <find>date_default_timezone_set</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Eduardo Rocha\Documents\Projetos\PHP\fichas</dir>
@@ -120,21 +127,23 @@
         <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/nav-top.ctp" />
         <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/sidebar-menu.ctp" />
         <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/footer.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Fichasmedicas/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Fichasodontologicas/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Fichasodontologicas/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Fichasmedicas/add.ctp" />
         <option value="$PROJECT_DIR$/src/Model/Table/UsersTable.php" />
-        <option value="$PROJECT_DIR$/src/Model/Table/FichasodontologicasTable.php" />
-        <option value="$PROJECT_DIR$/src/Controller/FichasodontologicasController.php" />
-        <option value="$PROJECT_DIR$/src/Template/Fichasodontologicas/index.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/PaginaInicialController.php" />
-        <option value="$PROJECT_DIR$/src/Template/PaginaInicial/index.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Fichasmedicas/index.ctp" />
-        <option value="$PROJECT_DIR$/src/Controller/FichasmedicasController.php" />
-        <option value="$PROJECT_DIR$/src/Model/Table/FichasmedicasTable.php" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/form.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/PaginaInicial/index.ctp" />
+        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/FichasodontologicasController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Fichasmedicas/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Model/Table/FichasodontologicasTable.php" />
         <option value="$PROJECT_DIR$/config/bootstrap.php" />
+        <option value="$PROJECT_DIR$/src/Template/Fichasodontologicas/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Model/Table/FichasmedicasTable.php" />
+        <option value="$PROJECT_DIR$/src/Controller/FichasmedicasController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Fichasmedicas/add.ctp" />
       </list>
     </option>
   </component>
@@ -152,73 +161,76 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/cakephp-codesniffer" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/cakephp" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/plugin-installer" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/migrations" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/bake" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/debug_kit" />
-      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
-      <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/seld/cli-prompt" />
-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
-      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
-      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
-      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
-      <path value="$PROJECT_DIR$/vendor/symfony/config" />
-      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
-      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/admad/cakephp-i18n" />
       <path value="$PROJECT_DIR$/vendor/m1/env" />
-      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
-      <path value="$PROJECT_DIR$/vendor/aura/intl" />
-      <path value="$PROJECT_DIR$/vendor/robmorgan/phinx" />
-      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
-      <path value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme" />
-      <path value="$PROJECT_DIR$/vendor/josegonzalez/dotenv" />
-      <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
-      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
-      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-diactoros" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/twig/twig" />
-      <path value="$PROJECT_DIR$/vendor/asm89/twig-cache-extension" />
-      <path value="$PROJECT_DIR$/vendor/jasny/twig-extensions" />
-      <path value="$PROJECT_DIR$/vendor/aptoma/twig-markdown" />
-      <path value="$PROJECT_DIR$/vendor/umpirsky/twig-php-function" />
-      <path value="$PROJECT_DIR$/vendor/ajgl/breakpoint-twig-extension" />
-      <path value="$PROJECT_DIR$/vendor/wyrihaximus/twig-view" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
       <path value="$PROJECT_DIR$/vendor/friendsofcake/search" />
+      <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
+      <path value="$PROJECT_DIR$/vendor/josegonzalez/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/wyrihaximus/twig-view" />
+      <path value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme" />
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/robmorgan/phinx" />
+      <path value="$PROJECT_DIR$/vendor/umpirsky/twig-php-function" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/debug_kit" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/bake" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/migrations" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/plugin-installer" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/cakephp" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/cakephp-codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/aptoma/twig-markdown" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/jasny/twig-extensions" />
+      <path value="$PROJECT_DIR$/vendor/asm89/twig-cache-extension" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/seld/cli-prompt" />
+      <path value="$PROJECT_DIR$/vendor/aura/intl" />
+      <path value="$PROJECT_DIR$/vendor/ajgl/breakpoint-twig-extension" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1300" />
+    <option name="height" value="740" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
               <item name="fichas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
@@ -234,30 +246,69 @@
             <path>
               <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
               <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Table" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Fichasmedicas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Fichasodontologicas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
               <item name="fichas" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="cakephp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
               <item name="fichas" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="cakephp" type="462c0819:PsiDirectoryNode" />
-              <item name="cakephp" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/wamp64/www/wp-blog-eduardo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -297,28 +348,30 @@
       <workItem from="1529784649049" duration="9696000" />
       <workItem from="1529976846190" duration="885000" />
       <workItem from="1530396602922" duration="1995000" />
-      <workItem from="1530480311373" duration="12594000" />
+      <workItem from="1530480311373" duration="12896000" />
+      <workItem from="1530925421601" duration="3709000" />
+      <workItem from="1530930414277" duration="772000" />
+      <workItem from="1530931314896" duration="3302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50657000" />
+    <option name="totallyTimeSpent" value="58742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27421874" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28125" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -328,6 +381,7 @@
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,20 +391,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Template/Fichasmedicas/view.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Migrations/20180618012706_FichasOdontologias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/Migrations/20180619004216_AlterandoTabelaUsuario.php" />
     <entry file="file://$PROJECT_DIR$/src/Template/Usuarios/add.ctp" />
     <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Layout/login.ctp">
@@ -379,9 +419,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Entity/Fichasodontologica.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/cakephp/cakephp/src/Core/Plugin.php">
@@ -420,13 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/user-panel.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Pages/documentation.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1588">
@@ -452,9 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
-          <folding>
-            <element signature="n#svg#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -503,20 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Fichasmedicas/edit.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/FichasodontologicasTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Users/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -531,31 +544,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FichasodontologicasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PaginaInicialController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Fichasodontologicas/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/PaginaInicial/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -577,9 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85">
           <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#35#71#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,9 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-493">
           <caret line="47" column="37" lean-forward="true" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-          <folding>
-            <element signature="e#34#53#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -607,6 +593,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/user-panel.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/form.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="227" column="49" selection-start-line="227" selection-start-column="49" selection-end-line="227" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/PaginaInicial/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FichasodontologicasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Fichasmedicas/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Fichasmedicas/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
@@ -614,45 +656,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Fichasmedicas/add.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/FichasodontologicasTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FichasmedicasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="60" column="99" selection-start-line="60" selection-start-column="99" selection-end-line="60" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/FichasmedicasTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
-          <folding>
-            <element signature="e#34#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="58" column="56" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
-          <folding>
-            <element signature="e#6#575#0#PHP" expanded="true" />
-            <element signature="e#604#635#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="107" column="40" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
+        <state relative-caret-position="268">
+          <caret line="191" column="55" selection-start-line="191" selection-start-column="55" selection-end-line="191" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Fichasodontologicas/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FichasmedicasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-491">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/FichasmedicasTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1266">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Fichasmedicas/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="29" column="173" selection-start-line="29" selection-start-column="173" selection-end-line="29" selection-end-column="173" />
         </state>
       </provider>
     </entry>

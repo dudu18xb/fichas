@@ -19,6 +19,7 @@ use Cake\Controller\Controller;
 use Cake\Core\Configure;
 use Cake\Event\Event;
 
+
 /**
  * Application Controller
  *
@@ -56,7 +57,7 @@ class AppController extends Controller
                 ]
             ],
             'loginRedirect' => [
-                'controller' => 'PaginaInicialController',
+                'controller' => 'PaginaInicial',
                 'action' => 'index'
             ],
             'loginAction' => [

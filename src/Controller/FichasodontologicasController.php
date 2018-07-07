@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Controller;
-
 use App\Controller\AppController;
-
 /**
  * Fichasodontologicas Controller
  *
@@ -13,16 +10,13 @@ use App\Controller\AppController;
  */
 class FichasodontologicasController extends AppController
 {
-
     public function initialize()
     {
         parent::initialize();
-
         $this->loadComponent('Search.Prg', [
             'actions' => ['index']
         ]);
     }
-
     /**
      * Index method
      *
@@ -34,7 +28,6 @@ class FichasodontologicasController extends AppController
             ->find('search', ['search' => $this->request->getQueryParams()]);
         $this->set('fichasodontologicas', $this->paginate($fichasodontologicas));
     }
-
     /**
      * View method
      *
@@ -47,10 +40,8 @@ class FichasodontologicasController extends AppController
         $fichasodontologica = $this->Fichasodontologicas->get($id, [
             'contain' => []
         ]);
-
         $this->set('fichasodontologica', $fichasodontologica);
     }
-
     /**
      * Add method
      *
@@ -71,7 +62,6 @@ class FichasodontologicasController extends AppController
         $this->set(compact('fichasodontologica'));
         $this->set('_serialize', ['fichasodontologica']);
     }
-
     /**
      * Edit method
      *
@@ -96,7 +86,6 @@ class FichasodontologicasController extends AppController
         $this->set(compact('fichasodontologica'));
         $this->set('_serialize', ['fichasodontologica']);
     }
-
     /**
      * Delete method
      *
@@ -115,7 +104,6 @@ class FichasodontologicasController extends AppController
         }
         return $this->redirect(['action' => 'index']);
     }
-
     public function isAuthorized($user)
     {
         // Todos os usuários registrados podem adicionar artigos

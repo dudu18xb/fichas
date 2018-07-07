@@ -95,7 +95,7 @@ if (Configure::read('debug')) {
  * Check http://php.net/manual/en/timezones.php for list of valid timezone strings.
  */
 date_default_timezone_set('America/Sao_Paulo');
-
+setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
 /*
  * Configure the mbstring extension to use the correct encoding.
  */
@@ -179,14 +179,18 @@ ServerRequest::addDetector('tablet', function ($request) {
  * locale specific date formats. For details see
  * @link https://book.cakephp.org/3.0/en/core-libraries/internationalization-and-localization.html#parsing-localized-datetime-data
  */
-Type::build('time')
-    ->useImmutable();
-Type::build('date')
-    ->useImmutable();
-Type::build('datetime')
-    ->useImmutable();
-Type::build('timestamp')
-    ->useImmutable();
+Type::build('time')->useImmutable();
+Type::build('date')->useImmutable()->useLocaleParser();
+Type::build('datetime')->useImmutable()->useLocaleParser();
+Type::build('timestamp')->useImmutable();
+Type::build('decimal')->useLocaleParser();
+Type::build('float')->useLocaleParser();
+
+\Cake\I18n\Time::setToStringFormat('dd/MM/yyyy HH:mm:ss');
+\Cake\I18n\Date::setToStringFormat('dd/MM/yyyy');
+\Cake\I18n\FrozenTime::setToStringFormat('dd/MM/yyyy HH:mm:ss');
+\Cake\I18n\FrozenDate::setToStringFormat('dd/MM/yyyy');
+
 
 /*
  * Custom Inflector rules, can be set to correctly pluralize or singularize
@@ -235,4 +239,3 @@ Configure::write('Theme', [
 ]);
 Plugin::load('Search');
 
-Plugin::load('Search');

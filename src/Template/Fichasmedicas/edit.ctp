@@ -45,7 +45,6 @@ $this->Html->css([
     'AdminLTE./plugins/datepicker/datepicker3',
 ],
     ['block' => 'css']);
-
 $this->Html->script([
     'AdminLTE./plugins/input-mask/jquery.inputmask',
     'AdminLTE./plugins/input-mask/jquery.inputmask.date.extensions',
@@ -67,4 +66,3 @@ $this->Html->script([
     });
 </script>
 <?php $this->end(); ?>
-        

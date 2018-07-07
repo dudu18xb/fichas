@@ -6,6 +6,10 @@ use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
+use Cake\Event\Event;
+use ArrayObject;
+use Cake\I18n\Time;
+
 /**
  * Fichasodontologicas Model
  *
@@ -92,5 +96,11 @@ class FichasodontologicasTable extends Table
             ->notEmpty('data');
 
         return $validator;
+    }
+    public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
+    {
+        if (isset($data['data'])) {
+            $data['data'] = Time::parseDate($data['data'], 'Y-M-d');
+        }
     }
 }
