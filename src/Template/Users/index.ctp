@@ -20,10 +20,14 @@
                 </div>
                 <div class="box-header">
                     <?php echo $this->Form->create(null, ['valueSources' => 'users']); ?>
-                    <div class="input-group input-group-sm" style="width: 100%;float: left;display: flex;flex-wrap: nowrap;">
-                        <?php echo $this->Form->control('q', ['label' => 'Buscar Pelo Nome']); ?>
-                        <?php echo $this->Form->button('Buscar', ['type' => 'submit', ['class' => 'btn btn-info btn-flat']]); ?>
-                        <?php echo $this->Form->button('Resetar', ['action' => 'index', ['class' => 'btn btn-sucess btn-flat']]); ?>
+                    <div class="input-group input-group-sm">
+                        <div class="col-lg-12">
+                            <?php echo $this->Form->control('q', ['label' => 'Buscar Pelo Nome']); ?>
+                        </div>
+                        <div class="col-lg-12">
+                            <?php echo $this->Form->button('Buscar', ['type' => 'submit', ['class' => 'btn btn-info btn-flat']]); ?>
+                            <?php echo $this->Form->button('Resetar', ['action' => 'index', ['class' => 'btn btn-sucess btn-flat']]); ?>
+                        </div>
                     </div>
                     <?php echo $this->Form->end(); ?>
                 </div>

@@ -26,6 +26,10 @@ class FichasodontologicasController extends AppController
     {
         $fichasodontologicas = $this->Fichasodontologicas
             ->find('search', ['search' => $this->request->getQueryParams()]);
+
+        $total = $fichasodontologicas->count();
+
+        $this->set(compact('total'));
         $this->set('fichasodontologicas', $this->paginate($fichasodontologicas));
     }
     /**
@@ -53,10 +57,10 @@ class FichasodontologicasController extends AppController
         if ($this->request->is('post')) {
             $fichasodontologica = $this->Fichasodontologicas->patchEntity($fichasodontologica, $this->request->data);
             if ($this->Fichasodontologicas->save($fichasodontologica)) {
-                $this->Flash->success(__('The {0} has been saved.', 'Fichasodontologica'));
+                $this->Flash->success(__('O {0} foi salvo.', 'Ficha odontologica'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The {0} could not be saved. Please, try again.', 'Fichasodontologica'));
+                $this->Flash->error(__('O {0} não pôde ser salvo. Por favor, tente novamente.', 'Ficha odontologica'));
             }
         }
         $this->set(compact('fichasodontologica'));
@@ -77,10 +81,10 @@ class FichasodontologicasController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $fichasodontologica = $this->Fichasodontologicas->patchEntity($fichasodontologica, $this->request->data);
             if ($this->Fichasodontologicas->save($fichasodontologica)) {
-                $this->Flash->success(__('The {0} has been saved.', 'Fichasodontologica'));
+                $this->Flash->success(__('O {0} foi salvo.', 'Ficha odontologica'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The {0} could not be saved. Please, try again.', 'Fichasodontologica'));
+                $this->Flash->error(__('O {0} não pôde ser salvo. Por favor, tente novamente.', 'Ficha odontologica'));
             }
         }
         $this->set(compact('fichasodontologica'));
@@ -98,9 +102,9 @@ class FichasodontologicasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $fichasodontologica = $this->Fichasodontologicas->get($id);
         if ($this->Fichasodontologicas->delete($fichasodontologica)) {
-            $this->Flash->success(__('The {0} has been deleted.', 'Fichasodontologica'));
+            $this->Flash->success(__('O {0} foi deletado.', 'Ficha odontologica'));
         } else {
-            $this->Flash->error(__('The {0} could not be deleted. Please, try again.', 'Fichasodontologica'));
+            $this->Flash->error(__('O {0} não pôde ser excluído. Por favor, tente novamente.', 'Ficha odontologica'));
         }
         return $this->redirect(['action' => 'index']);
     }

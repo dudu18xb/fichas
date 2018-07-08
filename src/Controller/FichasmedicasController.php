@@ -28,6 +28,10 @@ class FichasmedicasController extends AppController
     {
         $fichasmedicas = $this->Fichasmedicas
             ->find('search', ['search' => $this->request->getQueryParams()]);
+
+        $total = $fichasmedicas->count();
+
+        $this->set(compact('total'));
         $this->set('fichasmedicas', $this->paginate($fichasmedicas));
     }
     /**
@@ -55,10 +59,10 @@ class FichasmedicasController extends AppController
         if ($this->request->is('post')) {
             $fichasmedica = $this->Fichasmedicas->patchEntity($fichasmedica, $this->request->data);
             if ($this->Fichasmedicas->save($fichasmedica)) {
-                $this->Flash->success(__('The {0} has been saved.', 'Fichasmedica'));
+                $this->Flash->success(__('O {0} foi salvo.', 'Ficha Medica'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The {0} could not be saved. Please, try again.', 'Fichasmedica'));
+                $this->Flash->error(__('O {0} não pôde ser salvo. Por favor, tente novamente.', 'Ficha medica'));
             }
         }
         $this->set(compact('fichasmedica'));
@@ -79,10 +83,10 @@ class FichasmedicasController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $fichasmedica = $this->Fichasmedicas->patchEntity($fichasmedica, $this->request->data);
             if ($this->Fichasmedicas->save($fichasmedica)) {
-                $this->Flash->success(__('The {0} has been saved.', 'Fichasmedica'));
+                $this->Flash->success(__('O {0} foi salvo.', 'Ficha medica'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The {0} could not be saved. Please, try again.', 'Fichasmedica'));
+                $this->Flash->error(__('O {0} não pôde ser salvo. Por favor, tente novamente.', 'Ficha medica'));
             }
         }
         $this->set(compact('fichasmedica'));
@@ -100,9 +104,9 @@ class FichasmedicasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $fichasmedica = $this->Fichasmedicas->get($id);
         if ($this->Fichasmedicas->delete($fichasmedica)) {
-            $this->Flash->success(__('The {0} has been deleted.', 'Fichasmedica'));
+            $this->Flash->success(__('O {0} foi eliminado.', 'Ficha medica'));
         } else {
-            $this->Flash->error(__('The {0} could not be deleted. Please, try again.', 'Fichasmedica'));
+            $this->Flash->error(__('O {0} não pôde ser excluído. Por favor, tente novamente.', 'Ficha medica'));
         }
         return $this->redirect(['action' => 'index']);
     }

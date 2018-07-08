@@ -20,3 +20,9 @@
 .sidebar-menu li a:hover svg path{
   fill: #fff;
 }
+.user-panel>.info>p{
+  max-width: 20ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

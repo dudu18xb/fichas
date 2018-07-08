@@ -25,9 +25,9 @@
         <?= $this->Form->create($fichasodontologica, array('role' => 'form')) ?>
           <div class="box-body">
           <?php
-          echo $this->Form->input('nome',['label' => 'Nome']);
-          echo $this->Form->input('numero',['label' => 'Número']);
-          echo $this->Form->input('data', ['label' => 'Data de Nascimento','empty' => true, 'default' => '', 'class' => 'datepicker form-control', 'type' => 'text']);
+          echo $this->Form->input('nome',['label' => 'Nome','placeholder' => 'Nome do Paciente']);
+          echo $this->Form->input('numero',['label' => 'Número','placeholder' => 'Número de Ficha']);
+          echo $this->Form->input('data', ['label' => 'Data de Nascimento','placeholder' => 'dia/mês/ano - Data de Nascimento', 'empty' => true, 'default' => '', 'class' => 'datepicker form-control', 'type' => 'text']);
           ?>
           </div>
           <!-- /.box-body -->
