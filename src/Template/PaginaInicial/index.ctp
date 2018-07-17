@@ -10,7 +10,7 @@
             <div class="box">
                 <!-- /.box-header -->
                 <div class="box-body table-responsive no-padding">
-                    <h3><a href="" target="_blank">Clique aqui ver como funciona o Sistema</a> </h3>
+                    <h3><a href="/files/tutorial.pdf" target="_blank">Clique aqui ver como funciona o Sistema</a> </h3>
                 </div>
             </div>
         </div>

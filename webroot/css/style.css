@@ -26,4 +26,7 @@
   text-overflow: ellipsis;
   white-space: nowrap; }
 
+.table.table-font > tbody > tr > td {
+  font-size: 11px; }
+
 /*# sourceMappingURL=style.css.map */

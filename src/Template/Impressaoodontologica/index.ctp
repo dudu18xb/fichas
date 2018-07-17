@@ -20,7 +20,7 @@
                 <!-- /.box-header -->
                 <div class="box-body table-responsive no-padding">
                     <h3 class="text-center">Um total de <?php echo $total ?> pessoas cadastradas</h3>
-                    <table class="table table-hover" id="ele1">
+                    <table class="table table-hover table-font" id="ele1">
                         <thead>
                         <tr>
                             <th>Id</th>
