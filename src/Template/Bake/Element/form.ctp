@@ -10,7 +10,7 @@ use Cake\Utility\Inflector;
   </h1>
   <ol class="breadcrumb">
     <li>
-    <?= $this->Html->link('<i class="fa fa-dashboard"></i> '.__('Back'), ['action' => 'index'], ['escape' => false]) ?>
+    <?= $this->Html->link('<i class="fa fa-dashboard"></i> '.__('Voltar'), ['action' => 'index'], ['escape' => false]) ?>
     </li>
   </ol>
 </section>
@@ -23,7 +23,7 @@ use Cake\Utility\Inflector;
       <!-- general form elements -->
       <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title"><?= __('Form') ?></h3>
+          <h3 class="box-title"><?= __('Formulário') ?></h3>
         </div>
         <!-- /.box-header -->
         <!-- form start -->
@@ -74,7 +74,7 @@ use Cake\Utility\Inflector;
           </div>
           <!-- /.box-body -->
           <div class="box-footer">
-            <?= $this->Form->button(__('Save')) ?>
+            <?= $this->Form->button(__('Salvar')) ?>
           </div>
         <?= $this->Form->end() ?>
       </div>

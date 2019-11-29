@@ -191,7 +191,6 @@ Type::build('float')->useLocaleParser();
 \Cake\I18n\FrozenTime::setToStringFormat('dd/MM/yyyy HH:mm:ss');
 \Cake\I18n\FrozenDate::setToStringFormat('dd/MM/yyyy');
 
-
 /*
  * Custom Inflector rules, can be set to correctly pluralize or singularize
  * table, model, controller names or whatever other string is passed to the
@@ -224,10 +223,10 @@ Plugin::load('AdminLTE', ['bootstrap' => true, 'routes' => true]);
 
 // To customize configuration paste it at end of file config/bootstrap.php
 Configure::write('Theme', [
-    'title' => 'AdminLTE',
+    'title' => 'Odonto Herrera',
     'logo' => [
-        'mini' => '<b>A</b>LT',
-        'large' => '<b>Admin</b>LTE'
+        'mini' => '<b>F</b>X',
+        'large' => '<b>Fichas</b> Xambrê'
     ],
     'login' => [
         'show_remember' => true,
@@ -239,3 +238,5 @@ Configure::write('Theme', [
 ]);
 Plugin::load('Search');
 
+Plugin::load('Josegonzalez/Upload');
+Plugin::load('CkEditor');

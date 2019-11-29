@@ -44,7 +44,7 @@ $pk = "\$$singularVar->{$primaryKey[0]}";
   </h1>
   <ol class="breadcrumb">
     <li>
-    <?= $this->Html->link('<i class="fa fa-dashboard"></i> ' . __('Back'), ['action' => 'index'], ['escape' => false])?>
+    <?= $this->Html->link('<i class="fa fa-dashboard"></i> ' . __('Voltar'), ['action' => 'index'], ['escape' => false])?>
     </li>
   </ol>
 </section>
@@ -56,7 +56,7 @@ $pk = "\$$singularVar->{$primaryKey[0]}";
         <div class="box box-solid">
             <div class="box-header with-border">
                 <i class="fa fa-info"></i>
-                <h3 class="box-title"><?php echo __('Information'); ?></h3>
+                <h3 class="box-title"><?php echo __('Informações'); ?></h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -170,7 +170,7 @@ foreach ($relations as $alias => $details):
                                 <% endforeach; %>
                                     
                                 <th>
-                                    <?php echo __('Actions'); ?>
+                                    <?php echo __('Ações'); ?>
                                 </th>
                             </tr>
 
@@ -186,9 +186,9 @@ foreach ($relations as $alias => $details):
 
                                     <% $otherPk = "\${$otherSingularVar}->{$details['primaryKey'][0]}"; %>
                                     <td class="actions">
-                                    <?= $this->Html->link(__('View'), ['controller' => '<%= $details['controller'] %>', 'action' => 'view', <%= $otherPk %>], ['class'=>'btn btn-info btn-xs']) %>
-                                    <?= $this->Html->link(__('Edit'), ['controller' => '<%= $details['controller'] %>', 'action' => 'edit', <%= $otherPk %>], ['class'=>'btn btn-warning btn-xs']) %>
-                                    <?= $this->Form->postLink(__('Delete'), ['controller' => '<%= $details['controller'] %>', 'action' => 'delete', <%= $otherPk %>], ['confirm' => __('Are you sure you want to delete # {0}?', <%= $otherPk %>), 'class'=>'btn btn-danger btn-xs']) %>    
+                                    <?= $this->Html->link(__('Visualizar'), ['controller' => '<%= $details['controller'] %>', 'action' => 'view', <%= $otherPk %>], ['class'=>'btn btn-info btn-xs']) %>
+                                    <?= $this->Html->link(__('Editar'), ['controller' => '<%= $details['controller'] %>', 'action' => 'edit', <%= $otherPk %>], ['class'=>'btn btn-warning btn-xs']) %>
+                                    <?= $this->Form->postLink(__('Excluir'), ['controller' => '<%= $details['controller'] %>', 'action' => 'delete', <%= $otherPk %>], ['confirm' => __('Deseja mesmo Excluir?  # {0}?', <%= $otherPk %>), 'class'=>'btn btn-danger btn-xs']) %>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

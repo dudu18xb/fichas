@@ -12,7 +12,11 @@
         "cakephp/plugin-installer": "~1.0",
         "josegonzalez/dotenv": "2.*",
         "maiconpinto/cakephp-adminlte-theme": "^1.0",
-        "friendsofcake/search": "^4.4"
+        "friendsofcake/search": "^4.4",
+        "josegonzalez/cakephp-upload": "^4.0",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "imagine/imagine": "^1.1",
+        "cakecoded/ckeditor": "^1.0"
     },
     "require-dev": {
         "psy/psysh": "@stable",

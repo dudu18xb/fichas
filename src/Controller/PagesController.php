@@ -13,14 +13,22 @@
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
 namespace App\Controller;
+use Cake\Routing\Router;
 
 use Cake\Core\Configure;
+use Cake\Database\Expression\QueryExpression;
+use Cake\I18n\Date;
 use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
 
 /**
  * Static content controller
+ * @property \App\Model\Table\BannersTable $Banners
+ * @property \App\Model\Table\BlogsTable $Blogs
+ * @property \App\Model\Table\AboutTable $About
+ * @property \App\Model\Table\BackgroundparalaxTable $Backgroundparalax
+ * @property \App\Model\Table\PaginasTable $Paginas
  *
  * This controller will render views from Template/Pages/
  *
@@ -28,6 +36,16 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class PagesController extends AppController
 {
+    public function initialize()
+    {
+        parent::initialize();
+
+        $this->loadComponent('Flash');
+        $this->loadComponent('Search.Prg', [
+            'actions' => ['index']
+        ]);
+    }
+
 
     /**
      * Displays a view
@@ -66,4 +84,11 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
+    public function home()
+    {
+
+
+    }
+
+
 }

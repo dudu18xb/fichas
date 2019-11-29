@@ -2,122 +2,160 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="793ad031-177e-4259-9801-3a2b5817fa88" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Pages/home.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Element/paginacao.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/cakephp3.5_adminLTE_integration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cakephp3.5_adminLTE_integration.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cake" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cake.bat" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cake.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cake.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cake.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Migrations/20180618005612_Usuarios.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Migrations/20180618010206_FichasMedicas.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Migrations/20180618012706_FichasOdontologias.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Migrations/schema-dump-default.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/HTACSS.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/banco_de_dados/engenharia_reversa.mwb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/banco_de_dados/engenharia_reversa.mwb.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/banco_de_dados/ficha.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/banco_de_dados/fichacomdados.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/controller/conecta.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/controller/login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/controller/sair.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/controller/verificar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/buttons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/calendar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/estilo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/forms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/stats.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/imgs/dente.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/imgs/dente1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/imgs/medico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/imgs/medico1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/js/bootstrap-inputmask.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/js/jqBootstrapValidation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/js/jquery-3.2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/cadbloqueio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/cadmpacientes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/cadopacientes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/cadpacientebloq.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/cadusuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/erro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/excluirm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/excluiro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/excluirpaciente.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/excluirpacientesbloqueados.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/excluirusuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/home.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/inicio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/listausuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/listpacientesbloqqueado.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/listpacientescad.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/listpacmedic.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/listpacodon.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/salvarpaciente.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/salvarpacientesbloqueados.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/savem.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/saveo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/pages/saveusuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema_versao_1-0/sair.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Fixture/FichasmedicasFixture.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Fixture/FichasodontologicasFixture.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Fixture/UsersFixture.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Fixture/UsuariosFixture.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/FichasmedicasControllerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/FichasodontologicasControllerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/UsersControllerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/UsuariosControllerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/FichasmedicasTableTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/FichasodontologicasTableTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/UsersTableTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/UsuariosTableTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webroot/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webroot/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/.env.default" beforeDir="false" afterPath="$PROJECT_DIR$/config/.env.default" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.default.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.default.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bootstrap_cli.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bootstrap_cli.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/paths.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/paths.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/requirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/requirements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/schema/i18n.sql" beforeDir="false" afterPath="$PROJECT_DIR$/config/schema/i18n.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/schema/sessions.sql" beforeDir="false" afterPath="$PROJECT_DIR$/config/schema/sessions.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desenhos-para-pintar-do-planeta-terra-04-172x232.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/empty" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/empty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Installer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Component/empty" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Component/empty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ErrorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ErrorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FichasmedicasController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FichasodontologicasController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ImpressaomedicaController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ImpressaoodontologicaController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PaginaInicialController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UsersController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Behavior/empty" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Behavior/empty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/empty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/UsersTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/UsersTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/empty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shell/ConsoleShell.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shell/ConsoleShell.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Bake/Element/Controller/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Bake/Element/Controller/add.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Bake/Element/Controller/delete.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Bake/Element/Controller/delete.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Bake/Element/Controller/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Bake/Element/Controller/edit.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Bake/Element/datepicker.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Bake/Element/datepicker.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Bake/Element/form.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Bake/Template/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Bake/Template/add.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Bake/Template/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Bake/Template/edit.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Bake/Template/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Bake/Template/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Bake/Template/view.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Bake/Template/view.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Element/Flash/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Element/Flash/default.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Element/Flash/error.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Element/Flash/error.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Element/Flash/success.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Element/Flash/success.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Email/html/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Email/html/default.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Email/text/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Email/text/default.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Error/error400.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Error/error400.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Error/error500.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Error/error500.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Fichasmedicas/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Fichasmedicas/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Fichasmedicas/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Fichasmedicas/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Fichasodontologicas/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Fichasodontologicas/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Fichasodontologicas/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Fichasodontologicas/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Impressaomedica/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Impressaoodontologica/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Layout/Email/html/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/Email/html/default.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Layout/Email/text/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/Email/text/default.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Layout/ajax.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/ajax.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Layout/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/default.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Layout/error.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/error.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Layout/rss/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/rss/default.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Pages/home.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Pages/home.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/PaginaInicial/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Users/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Users/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Users/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Users/login.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Users/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/AjaxView.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AjaxView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/AppView.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AppView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Helper/empty" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Helper/empty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Fixture/empty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/ApplicationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/ApplicationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/Component/empty" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/Component/empty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/PagesControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/PagesControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Behavior/empty" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Behavior/empty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/View/Helper/empty" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/View/Helper/empty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/cake.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/tutorial.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/font/cakedingbats-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/font/cakedingbats-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/font/cakedingbats-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/font/cakedingbats-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/font/cakedingbats-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/font/cakedingbats-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/font/cakedingbats-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/font/cakedingbats-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/font/cakedingbats-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/font/cakedingbats-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/img/cake-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/img/cake-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/img/cake.icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/img/cake.icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/img/cake.logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/img/cake.logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/img/cake.power.gif" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/img/cake.power.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/js/empty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/js/jQuery.print.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="232" column="39" selection-start-line="232" selection-start-column="39" selection-end-line="232" selection-end-column="39" />
+            <state relative-caret-position="270">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/webroot/css/AdminLTE.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="4971" column="3" lean-forward="true" selection-start-line="4971" selection-start-column="3" selection-end-line="4971" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Layout/default.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -129,9 +167,15 @@
       <find>Sair</find>
       <find>main-sidebar</find>
       <find>img-circle</find>
+      <find>php</find>
+      <find>configs</find>
+      <find>confi</find>
+      <find>sea</find>
+      <find>admin</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Eduardo Rocha\Documents\Projetos\PHP\cakephp3.5_adminLTE_integration</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -140,108 +184,291 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/nav-top.ctp" />
-        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/user-panel.ctp" />
         <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/src/Controller/PagesController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Pages/home.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Layout/default.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Layout/login.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/PagesController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/UsersController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/FichasodontologicasController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/ImpressaomedicaController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/ImpressaoodontologicaController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/FichasmedicasController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/PaginaInicialController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/AppController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Element/nav-top.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Layout/default.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Element/aside/user-panel.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Element/aside-main-sidebar.ctp" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/config/.env" />
+        <option value="$PROJECT_DIR$/config/routes.php" />
+        <option value="$PROJECT_DIR$/config/bootstrap.php" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/user-panel.ctp" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/nav-top.ctp" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/form.ctp" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Layout/login.ctp" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/sidebar-menu.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Users/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Users/edit.ctp" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Layout/default.ctp" />
+        <option value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/webroot/css/AdminLTE.css" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
   </component>
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/friendsofcake/search" />
-      <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
-      <path value="$PROJECT_DIR$/vendor/josegonzalez/dotenv" />
-      <path value="$PROJECT_DIR$/vendor/wyrihaximus/twig-view" />
-      <path value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme" />
-      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
-      <path value="$PROJECT_DIR$/vendor/robmorgan/phinx" />
-      <path value="$PROJECT_DIR$/vendor/umpirsky/twig-php-function" />
-      <path value="$PROJECT_DIR$/vendor/twig/twig" />
-      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
-      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
-      <path value="$PROJECT_DIR$/vendor/symfony/config" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
-      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/vendor/aura/intl" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
-      <path value="$PROJECT_DIR$/vendor/m1/env" />
-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/debug_kit" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/bake" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/migrations" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/plugin-installer" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/cakephp" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/cakephp/cakephp-codesniffer" />
-      <path value="$PROJECT_DIR$/vendor/aptoma/twig-markdown" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
-      <path value="$PROJECT_DIR$/vendor/jasny/twig-extensions" />
-      <path value="$PROJECT_DIR$/vendor/asm89/twig-cache-extension" />
-      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
-      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
-      <path value="$PROJECT_DIR$/vendor/seld/cli-prompt" />
-      <path value="$PROJECT_DIR$/vendor/ajgl/breakpoint-twig-extension" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/plugin-installer" />
+      <path value="$PROJECT_DIR$/vendor/aura/intl" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/m1/env" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-diactoros" />
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
       <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
       <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
+      <path value="$PROJECT_DIR$/vendor/josegonzalez/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/debug_kit" />
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
+      <path value="$PROJECT_DIR$/vendor/robmorgan/phinx" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/cakephp-codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/cakephp" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/migrations" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/bake" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/ajgl/breakpoint-twig-extension" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/asm89/twig-cache-extension" />
+      <path value="$PROJECT_DIR$/vendor/jasny/twig-extensions" />
+      <path value="$PROJECT_DIR$/vendor/aptoma/twig-markdown" />
+      <path value="$PROJECT_DIR$/vendor/umpirsky/twig-php-function" />
+      <path value="$PROJECT_DIR$/vendor/wyrihaximus/twig-view" />
+      <path value="$PROJECT_DIR$/vendor/friendsofcake/search" />
+      <path value="$PROJECT_DIR$/vendor/josegonzalez/cakephp-upload" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
+      <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/cakecoded/ckeditor" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/jeremyharris/slugger" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/google_analytics/views" />
+      <path value="$PROJECT_DIR$/vendor/google_analytics/config" />
+      <path value="$PROJECT_DIR$/vendor/google_analytics/controllers" />
+      <path value="$PROJECT_DIR$/vendor/google_analytics/tests" />
+      <path value="$PROJECT_DIR$/vendor/google_analytics/.git" />
+      <path value="$PROJECT_DIR$/vendor/google_analytics/models" />
+      <path value="$PROJECT_DIR$/vendor/seld/cli-prompt" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-279" />
-    <option name="y" value="7" />
-    <option name="width" value="1300" />
-    <option name="height" value="736" />
+    <option name="y" value="25" />
+    <option name="width" value="1366" />
+    <option name="height" value="743" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="cakephp3.5_adminLTE_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cakephp3.5_adminLTE_integration" type="462c0819:PsiDirectoryNode" />
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cakephp3.5_adminLTE_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cakephp3.5_adminLTE_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Behavior" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Table" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="maiconpinto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="maiconpinto" type="462c0819:PsiDirectoryNode" />
+              <item name="cakephp-adminlte-theme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="maiconpinto" type="462c0819:PsiDirectoryNode" />
+              <item name="cakephp-adminlte-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="maiconpinto" type="462c0819:PsiDirectoryNode" />
+              <item name="cakephp-adminlte-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="maiconpinto" type="462c0819:PsiDirectoryNode" />
+              <item name="cakephp-adminlte-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Element" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="maiconpinto" type="462c0819:PsiDirectoryNode" />
+              <item name="cakephp-adminlte-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Element" type="462c0819:PsiDirectoryNode" />
+              <item name="aside" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="maiconpinto" type="462c0819:PsiDirectoryNode" />
+              <item name="cakephp-adminlte-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="maiconpinto" type="462c0819:PsiDirectoryNode" />
+              <item name="cakephp-adminlte-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fichas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fichas" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="maiconpinto" type="462c0819:PsiDirectoryNode" />
+              <item name="cakephp-adminlte-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../imobiliario-parana" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/src/Template/Admin/Pages" />
+      <recent name="$PROJECT_DIR$/src/Template/Element" />
+      <recent name="$PROJECT_DIR$/src/Template/Admin/Layout" />
+      <recent name="$PROJECT_DIR$/src/Controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Controller" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -255,6 +482,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="FichasmedicasController.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/fichas/Controller/Admin/FichasmedicasController.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.FichasmedicasController.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -266,75 +503,354 @@
       <option name="presentableId" value="Default" />
       <updated>1532223650612</updated>
       <workItem from="1532223653736" duration="1931000" />
+      <workItem from="1574964659649" duration="9343000" />
+      <workItem from="1574974149078" duration="4015000" />
+      <workItem from="1574984229270" duration="1761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1931000" />
+    <option name="totallyTimeSpent" value="17050000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3409091" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3284553" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3284553" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3273906" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/ErrorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="284" column="9" selection-start-line="284" selection-start-column="9" selection-end-line="284" selection-end-column="9" />
+        <state relative-caret-position="248">
+          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Bake/Element/form.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="89" selection-start-line="89" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Pages/home.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Layout/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Users/login.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php" />
+    <entry file="file://$PROJECT_DIR$/bin/cake.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="73" column="43" lean-forward="true" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-202">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+          <folding>
+            <element signature="e#603#634#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#592#616#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/AjaxView.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/AppView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Layout/login.ctp" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/FichasodontologicasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/ImpressaomedicaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/ImpressaoodontologicaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/FichasmedicasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/PaginaInicialController.php" />
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/aside/form.ctp" />
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/aside/sidebar-menu.ctp" />
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/nav-top.ctp" />
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Pages/home.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/aside/user-panel.ctp" />
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Layout/default.ctp" />
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/aside-main-sidebar.ctp" />
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/apache_config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/.env.default">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="238" column="13" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/user-panel.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding>
-            <element signature="e#6#30#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/form.ctp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/nav-top.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="97" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="97" />
+        <state relative-caret-position="263">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
             <element signature="e#6#30#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Layout/login.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="232" column="39" selection-start-line="232" selection-start-column="39" selection-end-line="232" selection-end-column="39" />
+        <state relative-caret-position="219">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/UsersTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside-control-sidebar.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside-main-sidebar.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="88" column="33" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="33" />
+          <folding>
+            <element signature="e#6#575#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Element/aside/sidebar-menu.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="e#7#31#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Users/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Users/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/src/Template/Layout/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maiconpinto/cakephp-adminlte-theme/webroot/css/AdminLTE.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="4971" column="3" lean-forward="true" selection-start-line="4971" selection-start-column="3" selection-end-line="4971" selection-end-column="3" />
         </state>
       </provider>
     </entry>

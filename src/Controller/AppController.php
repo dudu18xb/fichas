@@ -12,14 +12,11 @@
  * @since     0.2.9
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
-
 namespace App\Controller;
 
 use Cake\Controller\Controller;
-use Cake\Core\Configure;
 use Cake\Event\Event;
-
-
+use Cake\Database\Expression\QueryExpression;
 /**
  * Application Controller
  *
@@ -27,6 +24,7 @@ use Cake\Event\Event;
  * will inherit them.
  *
  * @link https://book.cakephp.org/3.0/en/controllers.html#the-app-controller
+ * @property \App\Model\Table\ConfigsTable $Configs
  */
 class AppController extends Controller
 {
@@ -44,32 +42,24 @@ class AppController extends Controller
     {
         parent::initialize();
 
+        $this->loadModel('Configs');
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-        $this->loadComponent('Auth', [
-            'authorize' => 'Controller',
-            'authenticate' => [
-                'Form' => [
-                    'fields' => [
-                        'username' => 'login',
-                        'password' => 'password'
-                    ]
-                ]
-            ],
-            'loginRedirect' => [
-                'controller' => 'PaginaInicial',
-                'action' => 'index'
-            ],
-            'loginAction' => [
-                'controller' => 'Users',
-                'action' => 'login'
-            ],
-            // If unauthorized, return them to page they were just on
-            'unauthorizedRedirect' => $this->referer()
-        ]);
 
-        $this->loadComponent('Security');
-        $this->loadComponent('Csrf');
+        $configs = $this->Configs
+            ->find()
+            ->first();
+
+
+        $this->set(compact('configs'));
+        
+
+        /*
+         * Enable the following components for recommended CakePHP security settings.
+         * see https://book.cakephp.org/3.0/en/controllers/components/security.html
+         */
+        //$this->loadComponent('Security');
+        //$this->loadComponent('Csrf');
     }
 
     /**
@@ -78,30 +68,18 @@ class AppController extends Controller
      * @param \Cake\Event\Event $event The beforeRender event.
      * @return \Cake\Http\Response|null|void
      */
-    public function beforeRender(Event $event)
-    {
-        // Note: These defaults are just to get started quickly with development
-        // and should not be used in production. You should instead set "_serialize"
-        // in each action as required.
-        if (!array_key_exists('_serialize', $this->viewVars) &&
-            in_array($this->response->type(), ['application/json', 'application/xml'])
-        ) {
-            $this->set('_serialize', true);
-        }
-        $this->viewBuilder()->setTheme('AdminLTE');
-        $this->set('theme', Configure::read('Theme'));
-    }
-
-
-    public function isAuthorized($user)
-    {
-        // Admin pode acessar todas as actions
-        if (isset($user['role']) && $user['role'] === 'admin') {
-            return true;
-        }
-
-        // Bloqueia acesso por padrão
-        return false;
-    }
-
+    /*Para ativar o thema do painel*/
+//    public function beforeRender(Event $event)
+    //    {
+    //        // Note: These defaults are just to get started quickly with development
+    //        // and should not be used in production. You should instead set "_serialize"
+    //        // in each action as required.
+    //        if (!array_key_exists('_serialize', $this->viewVars) &&
+    //            in_array($this->response->type(), ['application/json', 'application/xml'])
+    //        ) {
+    //            $this->set('_serialize', true);
+    //        }
+    //        $this->viewBuilder()->setTheme('AdminLTE');
+    //        $this->set('theme', Configure::read('Theme'));
+    //    }
 }
