@@ -223,7 +223,7 @@ Plugin::load('AdminLTE', ['bootstrap' => true, 'routes' => true]);
 
 // To customize configuration paste it at end of file config/bootstrap.php
 Configure::write('Theme', [
-    'title' => 'Odonto Herrera',
+    'title' => 'Eduardo Rocha',
     'logo' => [
         'mini' => '<b>F</b>X',
         'large' => '<b>Fichas</b> Xambrê'

@@ -13,7 +13,7 @@
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
 namespace App\Controller;
-
+use Cake\Routing\Router;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\Database\Expression\QueryExpression;
@@ -42,14 +42,16 @@ class AppController extends Controller
     {
         parent::initialize();
 
-        $this->loadModel('Configs');
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
 
-        $configs = $this->Configs
-            ->find()
-            ->first();
-
+        $seo = [
+            'title' => 'Eduardo Rocha',
+            'description' => 'Graduado em Tecnologia em Sistemas para Internet na Faculdade Alfa de Umuarama no Paraná e Especialista em Desenvolvimento de Aplicações Web e Dispositivos Móveis. Trabalho com programação para web utilizando tecnologias Front-End e Back-End, HTML 5, CSS3, Javascript, PHP 7.1, CakePHP',
+            'keywords' => 'Eduardo Rocha, dudu18xb, Programador Web, Criador sites, Criar Portais','Umuarama', 'Paraná','Developer', 'Full Stack','CakePHP 3.*','Framework',
+            'url' => 'https://eduardodev.com.br',
+        ];
+        $this->set(compact('banners','blogs','bannerparalaxs','seo','seopaginas'));
 
         $this->set(compact('configs'));
         

@@ -16,7 +16,7 @@ use Cake\Routing\Router;
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeTitle = 'Odonto Herrera';
+$cakeTitle = 'Full Stack Developer';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -38,12 +38,7 @@ $cakeTitle = 'Odonto Herrera';
         <meta property="og:title" content="<?php if(!empty($seo)) { echo $cakeTitle." | ". $seo['title']; }else { echo $cakeTitle; } ?>"/>
         <meta property="og:description" content="<?php echo $seo['description']; ?>"/>
         <meta property="og:keywords" content="<?php echo $seo['keywords']; ?>"/>
-        <?php if(!empty($blog)){ ?>
-            <meta property="og:image" content="/files/Blogs/capa/<?php echo h($blog->capa) ?>">
-            <meta property="og:image:type" content="image/jpeg">
-            <meta property="og:image:width" content="800">
-            <meta property="og:image:height" content="600">
-        <?php } ?>
+        <meta property="og:image" content="/img/bg.jpg">
         <meta name="title" content="<?php if(!empty($seo)) { echo $cakeTitle." | ". $seo['title']; }else { echo $cakeTitle; } ?>">
         <meta name="description" content="<?php echo $seo['description']; ?>">
         <meta name="keywords" content="<?php echo $seo['keywords']; ?>">
@@ -52,299 +47,86 @@ $cakeTitle = 'Odonto Herrera';
         <meta name='twitter:title' content='<?php if(!empty($seo)) { echo $cakeTitle." | ". $seo['title']; }else { echo $cakeTitle; } ?>'>
         <meta name='twitter:description' content='<?php echo $seo['description']; ?>'>
     <?php } ?>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"
+          async="async">
 
     <?= $this->Html->meta('icon') ?>
 
     <!-- importando os estilos -->
-    <?php echo $this->Html->css('bootstrap.min'); ?>
-    <?php echo $this->Html->css('font-awesome.min'); ?>
-    <?php echo $this->Html->css('owl.carousel'); ?>
-    <?php echo $this->Html->css('owl.theme.default'); ?>
     <?php echo $this->Html->css('animate'); ?>
-    <?php echo $this->Html->css('main_styles'); ?>
-    <?php echo $this->Html->css('responsive'); ?>
-    <?php echo $this->Html->css('estilo'); ?>
-    <?php echo $this->Html->css('slick'); ?>
-    <?php echo $this->Html->css('slick-theme'); ?>
-    <?php echo $this->Html->css('jquery.fancybox.min'); ?>
+    <?php echo $this->Html->css('icomoon'); ?>
+    <?php echo $this->Html->css('bootstrap'); ?>
+    <?php echo $this->Html->css('flexslider'); ?>
+    <?php echo $this->Html->css('owl.carousel.min'); ?>
+    <?php echo $this->Html->css('owl.theme.default.min'); ?>
+    <?php echo $this->Html->css('style'); ?>
+    <?php echo $this->Html->script(['modernizr-2.6.2.min']); ?>
 
 
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113196390-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113196390-2');
+</script>
 </head>
 <body>
-<div class="super_container">
-    <!-- menu -->
-    <div class="menu trans_500">
-        <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
-            <div class="menu_close_container">
-                <div class="menu_close"></div>
+<div id="colorlib-page">
+    <div class="container-wrap">
+        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+        <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+            <div class="text-center">
+                <div class="author-img" style="background-image: url(img/banner/eduardo.jpg);"></div>
+                <h1 id="colorlib-logo"><a href="index.html">Eduardo Rocha</a></h1>
+                <span class="position"><a href="https://winsite.com.br/" target="_blank" rel="noopener noreferrer" title="Developer Full Stack in Winsite">Developer Full Stack</a> in Winsite</span>
             </div>
-            <?php echo $this->Form->create(null, ['url' => ['controller' => 'Blogs','action' => 'index'],'valueSources' => 'blogs', 'class' => 'menu_search_form']); ?>
-            <?php echo $this->Form->control('q', ['label' => false, 'type' => 'text', 'class' => 'menu_search_input', 'placeholder' => 'Pesquisar...']); ?>
-            <button class="menu_search_button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-            <?php echo $this->Form->end(); ?>
-            <ul>
-                <li class="menu_item"><a
-                        href="<?php echo Router::url('/', ['controller' => 'Pages', 'action' => 'home']); ?>" title="Home">Home</a>
-                </li>
-                <li class="menu_item"><a
-                        href="<?php echo Router::url( ['controller' => 'Pages', 'action' => 'about']); ?>" title="Institucional">Institucional</a></li>
-                <li class="menu_item"><a
-                        href="<?php echo Router::url('servicos', ['controller' => 'Pages', 'action' => 'services']); ?>" title="Serviços">Serviços</a>
-                </li>
-                <li class="menu_item"><a
-                        href="<?php echo Router::url(['controller' => 'Blogs', 'action' => 'index']); ?>" title="Blog">Blog</a>
-                </li>
-                <li class="menu_item"><a
-                        href="<?php echo Router::url(['controller' => 'Contato', 'action' => 'index']); ?>" title="Contato">Contato</a>
-                </li>
-            </ul>
-        </div>
-        <div class="menu_social">
-            <ul>
-                <?php if(!empty($configs->facebook)){ ?>
-                    <li><a href="<?php echo h($configs->facebook) ?>" target="_blank" title="Acessar fanpage do Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <?php } ?>
-                <?php if(!empty($configs->instagram)){ ?>
-                    <li><a href="<?php echo h($configs->instagram) ?>" target="_blank" title="Acessar o perfil do Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <?php } ?>
-                <?php if(!empty($configs->twitter)){ ?>
-                    <li><a href="<?php echo h($configs->twitter) ?>" target="_blank" title="Acessar o perfil do Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <?php } ?>
-                <?php if(!empty($configs->celular)){ ?>
-                    <li><a href="<?php echo h($configs->celular) ?>" target="_blank" title="Conversar pelo Whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                <?php } ?>
-            </ul>
-        </div>
-    </div>
-    <!-- final menu -->
-    <!-- Header -->
-    <header class="header" id="header">
-        <div>
-            <div class="header_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="header_top_content d-flex flex-row align-items-center justify-content-start">
-                                <div class="logo">
-                                    <a href="<?php echo Router::url('/', ['controller' => 'Pages', 'action' => 'home']); ?>" title="Odontologia Herrera"><img src="/img/logotopo.png" alt="Odontologia Herrera"> </a>
-                                </div>
-                                <div
-                                    class="header_top_extra d-flex flex-row align-items-center justify-content-start ml-auto">
-                                    <?php if(!empty($configs->celular)){ ?>
-                                    <div class="header_top_phone">
-                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                        <span><?php echo h($configs->celular) ?></span>
-                                    </div>
-                                    <?php } ?>
-                                    <?php if(!empty($configs->telefone)){ ?>
-                                    <div class="header_top_phone">
-                                        <i class="fa fa-phone" aria-hidden="true"></i>
-                                        <span><?php echo h($configs->telefone) ?></span>
-                                    </div>
-                                    <?php } ?>
-                                </div>
-                                <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            </div>
-                        </div>
-                    </div>
+            <nav id="colorlib-main-menu" role="navigation" class="navbar">
+                <div id="navbar" class="collapse">
+                    <ul>
+                        <li class="active"><a href=";" data-nav-section="home">Home</a></li>
+                        <li><a href="javascript:;" data-nav-section="about">About</a></li>
+                        <li><a href="javascript:;" data-nav-section="skills">Skills</a></li>
+                        <li><a href="javascript:;" data-nav-section="education">Education</a></li>
+                        <!--
+                        <li><a href="#" data-nav-section="experience">Experience</a></li>
+                        <li><a href="#" data-nav-section="work">Work</a></li>
+                        <li><a href="#" data-nav-section="blog">Blog</a></li>
+                        <li><a href="#" data-nav-section="contact">Contact</a></li>
+                        -->
+                    </ul>
                 </div>
+            </nav>
+            <a href="https://eduardodev.com.br/admin" title="Fichas" target="_blank" style='cursor: pointer;text-align: center;width: 100%;float: left;text-transform: uppercase;'><i class="fas fa-notes-medical"></i> Fichas</a>
+            <div class="colorlib-footer">
+                <p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fas fa-mouse-pointer"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> </small></p>
+                <ul>
+                    <li><a href="https://www.facebook.com/dudu18xb" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/dudu18XB" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/dudu18xb" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com/in/eduardo-rocha-2b9417145" target="_blank" rel="noopener noreferrer" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.youtube.com/c/dudu18XB" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://github.com/dudu18xb" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a></li>
+                    <li><a href="mailto:eduardorocha460@gmail.com" target="_blank" rel="noopener noreferrer" title="E-mail"><i class="fas fa-envelope"></i></a></li>
+                </ul>
             </div>
-            <div class="header_nav" id="header_nav_pin">
-                <div class="header_nav_inner">
-                    <div class="header_nav_container">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div
-                                        class="header_nav_content d-flex flex-row align-items-center justify-content-start">
-                                        <nav class="main_nav">
-                                            <ul class="d-flex flex-row align-items-center justify-content-start">
-                                                <li class="active"><a
-                                                        href="<?php echo Router::url('/', ['controller' => 'Pages', 'action' => 'home']); ?>" title="Home">Home</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Router::url( ['controller' => 'Pages', 'action' => 'about']); ?>" title="Institucional">Institucional</a></li>
-                                                <li>
-                                                    <a href="<?php echo Router::url('servicos', ['controller' => 'Pages', 'action' => 'services']); ?>" title="Serviços">Serviços</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Router::url(['controller' => 'Blogs', 'action' => 'index']); ?>" title="Blog">Blog</a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Router::url('contato', ['controller' => 'Contato', 'action' => 'index']); ?>" title="Contato">Contato</a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                        <div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
-                                            <?php echo $this->Form->create(null, ['url' => ['controller' => 'Blogs','action' => 'index'],'valueSources' => 'blogs', 'class' => 'search_container_form', 'id' => 'search_container_form']); ?>
-                                            <?php echo $this->Form->control('q', ['label' => false, 'type' => 'text', 'class' => 'search_container_input', 'placeholder' => 'Pesquisar...']); ?>
-                                            <button class="search_container_button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                            <?php echo $this->Form->end(); ?>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- começo centro -->
+
+        </aside>
+
     <?= $this->Flash->render() ?>
     <?= $this->fetch('content') ?>
-    <!-- final começo centro -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="/images/footer.jpg"
-             data-speed="0.8"></div>
-        <div class="footer_content">
-            <div class="container">
-                <div class="row">
 
-                    <!-- Footer About -->
-                    <div class="col-lg-3 footer_col">
-                        <div class="footer_about">
-                            <div class="logo">
-                                <a href="<?php echo Router::url('/', ['controller' => 'Pages', 'action' => 'home']); ?>" title="Odontologia Herrera"><img src="/img/logotodape.png" alt="Odontologia Herrera"> </a>
-                            </div>
-                            <div class="footer_about_text">Confira Nossas Redes Sociais
-                            </div>
-                            <div class="footer_social">
-                                <ul class="d-flex flex-row align-items-center justify-content-start">
-                                    <?php if(!empty($configs->facebook)){ ?>
-                                        <li><a href="<?php echo h($configs->facebook) ?>" target="_blank" title="Acessar fanpage do Facebook" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <?php } ?>
-                                    <?php if(!empty($configs->instagram)){ ?>
-                                    <li><a href="<?php echo h($configs->instagram) ?>" target="_blank" title="Acessar o perfil do Instagram" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <?php } ?>
-                                    <?php if(!empty($configs->twitter)){ ?>
-                                    <li><a href="<?php echo h($configs->twitter) ?>" target="_blank" title="Acessar o perfil do Twitter" rel="noopener" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <?php } ?>
-                                    <?php if(!empty($configs->celular)){ ?>
-                                    <li><a href="<?php echo h($configs->celular) ?>" target="_blank" title="Conversar pelo Whatsapp" rel="noopener" aria-label="Whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                                    <?php } ?>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+<?php echo $this->Html->script(['jquery.min', 'jquery.easing.1.3','bootstrap.min','jquery.waypoints.min','jquery.flexslider-min','owl.carousel.min','jquery.countTo','main']); ?>
 
-                    <!-- Footer Contact -->
-                    <div class="col-lg-5 footer_col"></div>
-
-                    <!-- Footer Hours -->
-                    <div class="col-lg-4 footer_col">
-                        <div class="footer_hours">
-                            <div class="footer_hours_title"><i class="fa fa-clock-o" aria-hidden="true"></i> Atendimento</div>
-                            <ul class="hours_list">
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>Segunda - Umuarama</div>
-                                    <div class="ml-auto">08:30 – 18:00</div>
-                                </li>
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>Terça - Umuarama</div>
-                                    <div class="ml-auto">08:30 – 18:00</div>
-                                </li>
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>Quarta - Umuarama</div>
-                                    <div class="ml-auto">08:30 – 18:00</div>
-                                </li>
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>Quinta - Casa Branca</div>
-                                    <div class="ml-auto">08:30 – 18:00</div>
-                                </li>
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>Sexta - Umuarama</div>
-                                    <div class="ml-auto">08:30 – 18:00</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center" style="margin-bottom: 30px;">
-            Desenvolvido por <a href="https://eduardodev.com.br" target="_blank" class="text-white" title="Desenvolvido por Eduardo Rocha">Eduardo Rocha</a> | Template  <a href="javascript:;" title="Colorlib" class="text-white">Colorlib</a>
-        </div>
-        <div class="footer_bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div
-                            class="footer_bar_content d-flex flex-sm-row flex-column align-items-lg-center align-items-start justify-content-start">
-                            <nav class="footer_nav">
-                                <ul class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
-                                    <li><a href="<?php echo Router::url('/', ['controller' => 'Pages', 'action' => 'home']); ?>" title="Home">Home</a></li>
-                                    <li><a href="<?php echo Router::url(['controller' => 'Pages', 'action' => 'about']); ?>" title="Institucional">Institucional</a></li>
-                                    <li><a href="<?php echo Router::url(['controller' => 'Pages', 'action' => 'services']); ?>" title="Serviços">Serviços</a></li>
-                                    <li><a href="<?php echo Router::url(['controller' => 'Blogs', 'action' => 'index']); ?>" title="Blog">Blog</a></li>
-                                    <li><a href="<?php echo Router::url('contato', ['controller' => 'Contato', 'action' => 'index']); ?>" title="Contato">Contato</a></li>
-                                </ul>
-                            </nav>
-                            <?php if(!empty($configs->celular)){ ?>
-                            <div class="footer_phone ml-lg-auto">
-                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                <span><?php echo h($configs->celular) ?></span>
-                            </div>
-                            <?php } ?>
-                            <?php if(!empty($configs->telefone)){ ?>
-                            <div class="footer_phone ml-lg-5">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <span><?php echo h($configs->telefone) ?></span>
-                            </div>
-                            <?php } ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- FINAL Footer -->
-</div>
-
-<?php echo $this->Html->script(['jquery-3.3.1.min', 'popper', 'bootstrap.min', 'TweenMax.min', 'TimelineMax.min', 'ScrollMagic.min', 'animation.gsap.min', 'ScrollToPlugin.min', 'owl.carousel', 'easing', 'parallax.min', 'custom', 'services', 'about', 'news', 'contact','slick.min','jquery.fancybox.min','script-default']); ?>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-
-<script>
-    $(document).ready(function() {
-        $("#clicktrigger").trigger("click");
-    });
-
-</script>
-<ul class="social">
-    <?php if(!empty($configs->facebook)){ ?>
-    <li class="fb">
-        <a class="fa fa-facebook" href="<?php echo h($configs->facebook) ?>" target="_blank" rel="noopener" aria-label="Facebook">
-            <span>Facebook</span>
-        </a>
-    </li>
-    <?php } ?>
-    <?php if(!empty($configs->celular)){ ?>
-    <li class="wp">
-        <a class="fa fa-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=5544999763954" rel="noopener" aria-label="Whatsapp">
-            <span>Whatsapp</span>
-        </a>
-    </li>
-    <?php } ?>
-    <?php if(!empty($configs->instagram)){ ?>
-    <li class="int">
-        <a class="fa fa-instagram" href="<?php echo h($configs->instagram) ?>" target="_blank" rel="noopener" aria-label="Instagram">
-            <span>Instagram</span>
-        </a>
-    </li>
-    <?php } ?>
-    <?php if(!empty($configs->twitter)){ ?>
-    <li class="twt">
-        <a class="fa fa-twitter" href="<?php echo h($configs->twitter) ?>" target="_blank" rel="noopener" aria-label="Twitter">
-            <span>Twitter</span>
-        </a>
-    </li>
-    <?php } ?>
-</ul>
 </body>
 </html>

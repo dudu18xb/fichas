@@ -3,227 +3,515 @@
 use Cake\Routing\Router;
 
 ?>
-
-<div class="slider single-item">
-    <?php if (!empty($banners)) { ?>
-        <?php foreach ($banners as $banner) { ?>
-            <div>
-                <div class="home">
-                    <div class="background_image" style="background-image:url(/files/Banners/imagem/<?php echo h($banner->imagem) ?>)"></div>
-                    <!-- Final Header -->
-                    <div class="home_container">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="home_content">
-                                        <div class="home_title"><?php echo h($banner->titulo) ?></div>
-                                        <div class="home_text"><?php echo h($banner->sub_titulo) ?>
-                                        </div>
-                                        <div class="button home_button"><a
-                                                href="<?php echo h($banner->link) ?>"><span><?php echo h($banner->texto_botao) ?></span><span><?php echo h($banner->texto_botao) ?></span></a>
-                                        </div>
+<div id="colorlib-main">
+    <section id="colorlib-hero" class="js-fullheight" data-section="home" style="height: 202px;">
+        <div class="flexslider js-fullheight" style="height: 202px;">
+            <ul class="slides">
+                <li style="background-image: url(/img/banner/bg2.jpg); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;" class="flex-active-slide" data-thumb-alt="">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text animated fadeInUp" style="height: 202px;">
+                                <div class="slider-text-inner js-fullheight" style="height: 202px;">
+                                    <div class="desc">
+                                        <h1>Welcome</h1>
+                                        <h2>
+                                            I'm Eduardo, I'm 21 years, I'm a web developer, Front-End and Back-End, a mere coffee lover. <3</h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        <?php } ?>
-    <?php } ?>
-</div>
-<!-- Começo Info Boxes -->
-<?php if (!empty($blogs)) { ?>
-    <div class="info">
-        <div class="container">
-            <div class="row row-eq-height">
-                <?php foreach ($blogs as $blog) { ?>
-                    <!-- Info Box -->
-                    <div class="col-lg-4 info_box_col">
-                        <div class="info_box">
-                            <div class="info_image"><img src="/files/Blogs/capa/<?php echo h($blog->capa) ?>"
-                                                         alt="<?php echo h($blog->titulo) ?>"></div>
-                            <div class="info_content">
-                                <div class="info_title"><?php echo strip_tags(substr($blog->titulo, 0, 50)); ?></div>
-                                <div class="info_text"><?php echo strip_tags(substr($blog->descricao, 0, 120)); ?>
-                                </div>
-                                <div class="button info_button"><a
-                                        href="<?php echo Router::url(['controller' => 'Blogs', 'action' => 'view', 'categoria_slug' => $blog->categoria->slug, 'slug' => $blog->slug]); ?>"><span>Saiba mais</span><span>Saiba mais</span></a>
-                                </div>
+                </li>
+            </ul>
+    </section>
+
+    <section class="colorlib-about" data-section="about">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                        <div class="col-md-12">
+                            <div class="about-desc">
+                                <span class="heading-meta">About Us</span>
+                                <h2 class="colorlib-heading">Who Am I?</h2>
+                                <p><strong>Hi I'm Eduardo Rocha</strong> Graduated in Technology in Internet Systems at the Alfa in Umuarama College in Paraná and Specialist in Web Application Development and Mobile Devices. </p>
+                                <p>I work with web programming using Front End and Back End technologies, HTML 5, CSS3, Javascript, PHP 7.1, CakePHP. I seek to pursue new technologies and also love reading and a lot of coffee.</p>
+                                <p>
+                                    Want to contact me ? Send me an email <a href="mailto:eduardorocha460@gmail.com" title="E-mail" target="_blank" rel="noopener noreferrer">eduardorocha460@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
-                <?php } ?>
-
-            </div>
-        </div>
-    </div>
-<?php } ?>
-<!-- Finaldo Info Boxes -->
-
-<!-- CTA -->
-<?php if (!empty($bannerparalaxs)) { ?>
-    <?php foreach ($bannerparalaxs as $bannerparalax) { ?>
-        <div class="cta">
-        <?php if(!empty($bannerparalax->texto_botao)){ ?>
-            <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="/files/Backgroundparalax/imagem/<?php echo h($bannerparalax->imagem) ?>" data-speed="0.8" style="background-color: rgba(0, 0, 0, 0.5019607843137255);"></div>
-        <?php }else { ?>
-            <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="/files/Backgroundparalax/imagem/<?php echo h($bannerparalax->imagem) ?>" data-speed="0.8"></div>
-        <?php } ?>
-            <div class="text-content">
-                <div class="container">
                     <div class="row">
-                        <div class="col">
-                            <div
-                                class="cta_container d-flex flex-xl-row flex-column align-items-xl-start align-items-center justify-content-xl-start justify-content-center">
-                                <div class="cta_content text-xl-left text-center">
-                                    <div class="cta_title"><?php echo h($bannerparalax->titulo) ?></div>
-                                    <?php if (!empty($bannerparalax->sub_titulo)) { ?>
-                                        <div class="cta_subtitle"><?php echo h($bannerparalax->sub_titulo) ?></div>
-                                    <?php } ?>
-                                </div>
-                                <?php if(!empty($bannerparalax->texto_botao)){ ?>
-                                    <div class="button cta_button ml-xl-auto">
-                                        <a href="<?php echo h($bannerparalax->url) ?>" title="<?php echo h($bannerparalax->texto_botao) ?>"><span><?php echo h($bannerparalax->texto_botao) ?></span><span><?php echo h($bannerparalax->texto_botao) ?></span></a>
-                                    </div>
-                                <?php } ?>
+                        <div class="col-md-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                            <div class="services color-1">
+                                <span class="icon2"><i class="far fa-lightbulb"></i></span>
+                                <h3>Graphic Design</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                            <div class="services color-2">
+                                <span class="icon2"><i class="fas fa-laptop-code"></i></span>
+                                <h3>Web Design</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInTop">
+                            <div class="services color-3">
+                                <span class="icon2"><i class="fas fa-layer-group"></i></span>
+                                <h3>Software</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
+                            <div class="services color-4">
+                                <span class="icon2"><i class="fas fa-server"></i></span>
+                                <h3>Application</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <?php } ?>
-<?php } ?>
-<!-- FINAL CTA -->
+    </section>
 
-<!-- Services -->
-<div class="services">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <div class="section_title">Serviços</div>
-                <div class="section_subtitle">Conheça um pouco mais sobre a OdontoHerrera</div>
+    <section class="colorlib-skills" data-section="skills">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <span class="heading-meta">My Specialty</span>
+                    <h2 class="colorlib-heading animate-box fadeInUp animated">My Skills</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                </div>
+                <div class="col-md-6 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <div class="progress-wrap">
+                        <h3>Photoshop</h3>
+                        <div class="progress">
+                            <div class="progress-bar color-1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                    <div class="progress-wrap">
+                        <h3>jQuery</h3>
+                        <div class="progress">
+                            <div class="progress-bar color-2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <div class="progress-wrap">
+                        <h3>HTML5</h3>
+                        <div class="progress">
+                            <div class="progress-bar color-3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                    <div class="progress-wrap">
+                        <h3>CSS3</h3>
+                        <div class="progress">
+                            <div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <div class="progress-wrap">
+                        <h3>CakePHP</h3>
+                        <div class="progress">
+                            <div class="progress-bar color-5" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                    <div class="progress-wrap">
+                        <h3>SEO</h3>
+                        <div class="progress">
+                            <div class="progress-bar color-6" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row icon_boxes_row">
+    </section>
 
-            <!-- Icon Box -->
-            <div class="col-xl-4 col-lg-6">
-                <div class="icon_box">
-                    <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-                        <div class="icon_box_icon"><img src="icones/implantodontia.svg" alt="Implantodontia"></div>
-                        <div class="icon_box_title">Implantodontia</div>
-                    </div>
-                    <div class="icon_box_text">Destina-se ao tratamento do edentulismo com reabilitações protéticas
-                        suportadas ou retidas por implantes dentários.
+    <section class="colorlib-education" data-section="education">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <span class="heading-meta">Education</span>
+                    <h2 class="colorlib-heading animate-box fadeInUp animated">Education</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <div class="fancy-collapse-panel">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Specialization in College Alfa Umuarama
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>
+The Postgraduate Course in Internet and Mobile Development (WebDEV ALFA). Specialization Course Focused on Internet Focused Application Development</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+University Graduate in College Alfa Umuarama
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <p>Technologist Course in Internet Systems focused on Front End and Back End, also in Mobile development (takes care of the development of applications for mobile devices such as Android and Apple iOS - iPhone and iPad), besides being able to take care of Maintenance, Upgrade and Web Systems Security.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Icon Box -->
-            <div class="col-xl-4 col-lg-6">
-                <div class="icon_box">
-                    <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-                        <div class="icon_box_icon"><img src="icones/ortodontia.svg" alt="Ortodontia"></div>
-                        <div class="icon_box_title">Ortodontia</div>
-                    </div>
-                    <div class="icon_box_text">Prevenção e tratamento dos problemas de crescimento, desenvolvimento e
-                        amadurecimento da face, dos arcos dentários e da oclusão,
-                    </div>
-                </div>
-            </div>
-
-            <!-- Icon Box -->
-            <div class="col-xl-4 col-lg-6">
-                <div class="icon_box">
-                    <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-                        <div class="icon_box_icon"><img src="icones/endodontia.svg" alt="Endodontia"></div>
-                        <div class="icon_box_title">Endodontia</div>
-                    </div>
-                    <div class="icon_box_text">Tratamento da etiologia, diagnóstico, terapêutica e profilaxia das
-                        doenças e a raiz dentária, bem como o tecido periapical.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Icon Box -->
-            <div class="col-xl-4 col-lg-6">
-                <div class="icon_box">
-                    <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-                        <div class="icon_box_icon"><img src="icones/protese.svg" alt="Proteses"></div>
-                        <div class="icon_box_title">Proteses</div>
-                    </div>
-                    <div class="icon_box_text">Reposição de tecidos bucais e dentes perdidos, visando restaurar e manter
-                        a forma, função, aparência e saúde bucal.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Icon Box -->
-            <div class="col-xl-4 col-lg-6">
-                <div class="icon_box">
-                    <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-                        <div class="icon_box_icon"><img src="icones/periodontia.svg" alt="Periodontia"></div>
-                        <div class="icon_box_title">Periodontia</div>
-                    </div>
-                    <div class="icon_box_text">Tratamento das doenças do sistema de implantação e suporte dos dentes.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Icon Box -->
-            <div class="col-xl-4 col-lg-6">
-                <div class="icon_box">
-                    <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-                        <div class="icon_box_icon"><img src="icones/lente_contato.svg" alt="Lente de contato"></div>
-                        <div class="icon_box_title">Lente de contato</div>
-                    </div>
-                    <div class="icon_box_text">Indicadas para quase todas as necessidades de alteração da estética dos
-                        dentes, com a grande vantagem que o desgaste.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Icon Box -->
-            <div class="col-xl-4 col-lg-6">
-                <div class="icon_box">
-                    <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-                        <div class="icon_box_icon"><img src="icones/restauracao.svg" alt="Restauração"></div>
-                        <div class="icon_box_title">Restauração</div>
-                    </div>
-                    <div class="icon_box_text">Tratamento de restauração estrutura faltante do dente. A perda estrutural
-                        normalmente resulta de cárie ou trauma externo.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Icon Box -->
-            <div class="col-xl-4 col-lg-6">
-                <div class="icon_box">
-                    <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-                        <div class="icon_box_icon"><img src="icones/clareamento.svg" alt="Clareamento"></div>
-                        <div class="icon_box_title">Clareamento</div>
-                    </div>
-                    <div class="icon_box_text">Clareamento dental ou clareamento dentário é um tratamento utilizado para
-                        tornar os dentes mais brancos.
-                    </div>
-                </div>
-            </div>
-            <!-- Icon Box -->
-            <div class="col-xl-4 col-lg-6">
-                <div class="icon_box">
-                    <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-                        <div class="icon_box_icon"><img src="icones/cirurgias.svg" alt="Cirurgias"></div>
-                        <div class="icon_box_title">Cirurgias</div>
-                    </div>
-                    <div class="icon_box_text">Procedimentos médicos que envolvem modificar artificialmente a dentição;
-                        em outras palavras, cirurgia dos dentes, gengivas e ossos da mandíbula.
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
+    </section>
+
+<!--
+    <section class="colorlib-experience" data-section="experience">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <span class="heading-meta">Experience</span>
+                    <h2 class="colorlib-heading animate-box fadeInUp animated">Work Experience</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="timeline-centered">
+                        <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                            <div class="timeline-entry-inner">
+
+                                <div class="timeline-icon color-1">
+                                    <i class="icon-pen2"></i>
+                                </div>
+
+                                <div class="timeline-label">
+                                    <h2><a href="#">Full Stack Developer</a> <span>2017-2018</span></h2>
+                                    <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="timeline-entry animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon color-2">
+                                    <i class="icon-pen2"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2><a href="#">Front End Developer at Google Company</a> <span>2017-2018</span></h2>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon color-3">
+                                    <i class="icon-pen2"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2><a href="#">System Analyst</a> <span>2017-2018</span></h2>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-entry animate-box fadeInUp animated" data-animate-effect="fadeInTop">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon color-4">
+                                    <i class="icon-pen2"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2><a href="#">Creative Designer</a> <span>2017-2018</span></h2>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon color-5">
+                                    <i class="icon-pen2"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2><a href="#">UI/UX Designer at Envato</a> <span>2017-2018</span></h2>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-entry begin animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon color-none">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="colorlib-work" data-section="work">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <span class="heading-meta">My Work</span>
+                    <h2 class="colorlib-heading animate-box fadeInUp animated">Recent Work</h2>
+                </div>
+            </div>
+            <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                <div class="col-md-12">
+                    <p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <div class="project" style="background-image: url(images/img-1.jpg);">
+                        <div class="desc">
+                            <div class="con">
+                                <h3><a href="work.html">Work 01</a></h3>
+                                <span>Website</span>
+                                <p class="icon">
+                                    <span><a href="#"><i class="icon-share3"></i></a></span>
+                                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
+                                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                    <div class="project" style="background-image: url(images/img-2.jpg);">
+                        <div class="desc">
+                            <div class="con">
+                                <h3><a href="work.html">Work 02</a></h3>
+                                <span>Animation</span>
+                                <p class="icon">
+                                    <span><a href="#"><i class="icon-share3"></i></a></span>
+                                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
+                                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box fadeInUp animated" data-animate-effect="fadeInTop">
+                    <div class="project" style="background-image: url(images/img-3.jpg);">
+                        <div class="desc">
+                            <div class="con">
+                                <h3><a href="work.html">Work 03</a></h3>
+                                <span>Illustration</span>
+                                <p class="icon">
+                                    <span><a href="#"><i class="icon-share3"></i></a></span>
+                                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
+                                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
+                    <div class="project" style="background-image: url(images/img-4.jpg);">
+                        <div class="desc">
+                            <div class="con">
+                                <h3><a href="work.html">Work 04</a></h3>
+                                <span>Application</span>
+                                <p class="icon">
+                                    <span><a href="#"><i class="icon-share3"></i></a></span>
+                                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
+                                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <div class="project" style="background-image: url(images/img-5.jpg);">
+                        <div class="desc">
+                            <div class="con">
+                                <h3><a href="work.html">Work 05</a></h3>
+                                <span>Graphic, Logo</span>
+                                <p class="icon">
+                                    <span><a href="#"><i class="icon-share3"></i></a></span>
+                                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
+                                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                    <div class="project" style="background-image: url(images/img-6.jpg);">
+                        <div class="desc">
+                            <div class="con">
+                                <h3><a href="work.html">Work 06</a></h3>
+                                <span>Web Design</span>
+                                <p class="icon">
+                                    <span><a href="#"><i class="icon-share3"></i></a></span>
+                                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
+                                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 animate-box fadeInUp animated">
+                    <p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="colorlib-blog" data-section="blog">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <span class="heading-meta">Read</span>
+                    <h2 class="colorlib-heading">Recent Blog</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+                        <div class="desc">
+                            <span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+                            <h3><a href="blog.html">Renovating National Gallery</a></h3>
+                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                    <div class="blog-entry">
+                        <a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+                        <div class="desc">
+                            <span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+                            <h3><a href="blog.html">Wordpress for a Beginner</a></h3>
+                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+                        <div class="desc">
+                            <span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+                            <h3><a href="blog.html">Make website from scratch</a></h3>
+                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 animate-box fadeInUp animated">
+                    <p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="colorlib-contact" data-section="contact">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                    <span class="heading-meta">Get in Touch</span>
+                    <h2 class="colorlib-heading">Contact</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="colorlib-feature colorlib-feature-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                        <div class="colorlib-icon">
+                            <i class="icon-globe-outline"></i>
+                        </div>
+                        <div class="colorlib-text">
+                            <p><a href="#">info@domain.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="colorlib-feature colorlib-feature-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                        <div class="colorlib-icon">
+                            <i class="icon-map"></i>
+                        </div>
+                        <div class="colorlib-text">
+                            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                        </div>
+                    </div>
+
+                    <div class="colorlib-feature colorlib-feature-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                        <div class="colorlib-icon">
+                            <i class="icon-phone"></i>
+                        </div>
+                        <div class="colorlib-text">
+                            <p><a href="tel://">+123 456 7890</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-md-push-1">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
 </div>
-<!-- FINAL Services -->
